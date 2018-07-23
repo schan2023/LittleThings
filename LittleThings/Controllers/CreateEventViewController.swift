@@ -7,3 +7,12 @@
 //
 
 import Foundation
+import UIKit
+
+class CreateEventViewController: UIViewController {
+    
+    @IBOutlet weak var inputEventTextField: UITextField!
+    
+    @IBAction func saveButtonPressed(_ sender: Any) {
+    }
+}
