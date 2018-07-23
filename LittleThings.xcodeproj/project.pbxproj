@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8CB3DB3355A76C4CA3B304FE /* Pods_LittleThings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0016527CE55CF615DA4C251D /* Pods_LittleThings.framework */; };
+		FC4B7A00210586BD0066D359 /* ActivitiesMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC4B79FF210586BD0066D359 /* ActivitiesMain.storyboard */; };
+		FC4B7A02210587020066D359 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A01210587020066D359 /* MainViewController.swift */; };
+		FC4B7A042105871A0066D359 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A032105871A0066D359 /* CreateEventViewController.swift */; };
+		FC4B7A06210587E90066D359 /* DisplayEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A05210587E90066D359 /* DisplayEventViewController.swift */; };
+		FC4B7A082105956C0066D359 /* EventDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A072105956C0066D359 /* EventDayViewController.swift */; };
+		FC4B7A0A210595840066D359 /* ActivitiesMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A09210595840066D359 /* ActivitiesMainViewController.swift */; };
+		FC4B7A18210597630066D359 /* ListEventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A17210597630066D359 /* ListEventsTableViewCell.swift */; };
 		FCE153042105829A008682EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE153032105829A008682EB /* AppDelegate.swift */; };
-		FCE153062105829A008682EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE153052105829A008682EB /* ViewController.swift */; };
 		FCE153092105829A008682EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE153072105829A008682EB /* Main.storyboard */; };
 		FCE1530C2105829A008682EB /* LittleThings.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCE1530A2105829A008682EB /* LittleThings.xcdatamodeld */; };
 		FCE1530E210582A7008682EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCE1530D210582A7008682EB /* Assets.xcassets */; };
@@ -16,9 +23,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0016527CE55CF615DA4C251D /* Pods_LittleThings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LittleThings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59B4E1E67720E2845ADC1762 /* Pods-LittleThings.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittleThings.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LittleThings/Pods-LittleThings.debug.xcconfig"; sourceTree = "<group>"; };
+		5B8E6826D2682BC9C4A68098 /* Pods-LittleThings.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittleThings.release.xcconfig"; path = "Pods/Target Support Files/Pods-LittleThings/Pods-LittleThings.release.xcconfig"; sourceTree = "<group>"; };
+		FC4B79FF210586BD0066D359 /* ActivitiesMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ActivitiesMain.storyboard; sourceTree = "<group>"; };
+		FC4B7A01210587020066D359 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FC4B7A032105871A0066D359 /* CreateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
+		FC4B7A05210587E90066D359 /* DisplayEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayEventViewController.swift; sourceTree = "<group>"; };
+		FC4B7A072105956C0066D359 /* EventDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDayViewController.swift; sourceTree = "<group>"; };
+		FC4B7A09210595840066D359 /* ActivitiesMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesMainViewController.swift; sourceTree = "<group>"; };
+		FC4B7A17210597630066D359 /* ListEventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEventsTableViewCell.swift; sourceTree = "<group>"; };
 		FCE153002105829A008682EB /* LittleThings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleThings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE153032105829A008682EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FCE153052105829A008682EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FCE153082105829A008682EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FCE1530B2105829A008682EB /* LittleThings.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LittleThings.xcdatamodel; sourceTree = "<group>"; };
 		FCE1530D210582A7008682EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -31,17 +47,74 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CB3DB3355A76C4CA3B304FE /* Pods_LittleThings.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F2735DEBBE6CA426AFDAA5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59B4E1E67720E2845ADC1762 /* Pods-LittleThings.debug.xcconfig */,
+				5B8E6826D2682BC9C4A68098 /* Pods-LittleThings.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		40C4DF8C8CC3896E3A64697A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0016527CE55CF615DA4C251D /* Pods_LittleThings.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC4B79FB2105865A0066D359 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FCE1530F210582A7008682EB /* LaunchScreen.storyboard */,
+				FCE153072105829A008682EB /* Main.storyboard */,
+				FC4B79FF210586BD0066D359 /* ActivitiesMain.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FC4B79FC210586600066D359 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC4B7A01210587020066D359 /* MainViewController.swift */,
+				FC4B7A032105871A0066D359 /* CreateEventViewController.swift */,
+				FC4B7A05210587E90066D359 /* DisplayEventViewController.swift */,
+				FC4B7A072105956C0066D359 /* EventDayViewController.swift */,
+				FC4B7A09210595840066D359 /* ActivitiesMainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FC4B79FD2105866F0066D359 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FC4B7A17210597630066D359 /* ListEventsTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FC4B79FE210586740066D359 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		FCE152F721058299008682EB = {
 			isa = PBXGroup;
 			children = (
 				FCE153022105829A008682EB /* LittleThings */,
 				FCE153012105829A008682EB /* Products */,
+				0F2735DEBBE6CA426AFDAA5C /* Pods */,
+				40C4DF8C8CC3896E3A64697A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,11 +129,12 @@
 		FCE153022105829A008682EB /* LittleThings */ = {
 			isa = PBXGroup;
 			children = (
+				FC4B79FE210586740066D359 /* Models */,
+				FC4B79FD2105866F0066D359 /* Views */,
+				FC4B79FC210586600066D359 /* Controllers */,
+				FC4B79FB2105865A0066D359 /* Storyboards */,
 				FCE153032105829A008682EB /* AppDelegate.swift */,
-				FCE153052105829A008682EB /* ViewController.swift */,
-				FCE153072105829A008682EB /* Main.storyboard */,
 				FCE1530D210582A7008682EB /* Assets.xcassets */,
-				FCE1530F210582A7008682EB /* LaunchScreen.storyboard */,
 				FCE15312210582A7008682EB /* Info.plist */,
 				FCE1530A2105829A008682EB /* LittleThings.xcdatamodeld */,
 			);
@@ -74,9 +148,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCE15315210582A7008682EB /* Build configuration list for PBXNativeTarget "LittleThings" */;
 			buildPhases = (
+				E2C9197A1F635E41D679DC47 /* [CP] Check Pods Manifest.lock */,
 				FCE152FC2105829A008682EB /* Sources */,
 				FCE152FD2105829A008682EB /* Frameworks */,
 				FCE152FE2105829A008682EB /* Resources */,
+				9D523CF36CB012D1AF494A28 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,20 +203,65 @@
 			files = (
 				FCE15311210582A7008682EB /* LaunchScreen.storyboard in Resources */,
 				FCE1530E210582A7008682EB /* Assets.xcassets in Resources */,
+				FC4B7A00210586BD0066D359 /* ActivitiesMain.storyboard in Resources */,
 				FCE153092105829A008682EB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9D523CF36CB012D1AF494A28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LittleThings/Pods-LittleThings-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LittleThings/Pods-LittleThings-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2C9197A1F635E41D679DC47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LittleThings-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FCE152FC2105829A008682EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCE153062105829A008682EB /* ViewController.swift in Sources */,
+				FC4B7A06210587E90066D359 /* DisplayEventViewController.swift in Sources */,
+				FC4B7A02210587020066D359 /* MainViewController.swift in Sources */,
+				FC4B7A0A210595840066D359 /* ActivitiesMainViewController.swift in Sources */,
 				FCE153042105829A008682EB /* AppDelegate.swift in Sources */,
+				FC4B7A18210597630066D359 /* ListEventsTableViewCell.swift in Sources */,
 				FCE1530C2105829A008682EB /* LittleThings.xcdatamodeld in Sources */,
+				FC4B7A082105956C0066D359 /* EventDayViewController.swift in Sources */,
+				FC4B7A042105871A0066D359 /* CreateEventViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +403,7 @@
 		};
 		FCE15316210582A7008682EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59B4E1E67720E2845ADC1762 /* Pods-LittleThings.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +422,7 @@
 		};
 		FCE15317210582A7008682EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B8E6826D2682BC9C4A68098 /* Pods-LittleThings.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
