@@ -11,6 +11,8 @@ import UIKit
 
 class DisplayEventViewController: UIViewController {
     
+    var currentEvent: Event?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         generateEvent()
@@ -33,7 +35,24 @@ class DisplayEventViewController: UIViewController {
         //Set label as event description
         eventLabel.text = eventsArray[randomInt].eventDescription
         
+        //Saves current event
+        currentEvent = eventsArray[randomInt]
+        
     }
     
     //Use segue identifier to go to day function
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        guard let identifier = segue.identifier else { return }
+        
+        switch identifier {
+        case "displayEventDay":
+            print("inside display event day segue")
+            let destination = segue.destination as! EventDayViewController
+            destination.currentEvent = currentEvent
+            
+        default:
+            print("unexpected segue identifier")
+        }
+    }
 }

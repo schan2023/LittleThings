@@ -28,10 +28,8 @@ class CreateEventViewController: UIViewController {
         
         event = CoreDataHelper.newEvent()
         event?.eventDescription = inputEventTextField.text
-        event?.eventDate = convertDateFormatToString(date: Date())
-        
-        print(event?.eventDescription)
-        print(event?.eventDate)
+//        event?.eventDate = convertDateFormatToString(date: Date())
+        event?.eventDate = "05/12/16"
         
         inputEventTextField.resignFirstResponder()
         inputEventTextField.text = ""

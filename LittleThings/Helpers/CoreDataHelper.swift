@@ -51,5 +51,21 @@ struct CoreDataHelper {
             return []
         }
     }
+    
+    //Retrieve events by day
+    static func retrieveEventsByDay(date: String) -> [Event] {
+        do {
+            //Retrieves core data and sorts it by day
+            print("coredata helper retrieve events method")
+            let fetchRequest = NSFetchRequest<Event>(entityName: "Event")
+            fetchRequest.predicate = NSPredicate(format: "eventDate = %@", date)
+            let results = try context.fetch(fetchRequest)
+            return results
+        }
+        catch let error {
+            print("Could not fetch results")
+            return []
+        }
+    }
 
 }

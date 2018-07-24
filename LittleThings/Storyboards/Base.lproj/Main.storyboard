@@ -151,7 +151,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Go To Day"/>
                                 <connections>
-                                    <segue destination="qDZ-kl-Duc" kind="show" id="NHc-2f-Hyi"/>
+                                    <segue destination="qDZ-kl-Duc" kind="show" identifier="displayEventDay" id="NHc-2f-Hyi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFJ-ec-0hp">
@@ -195,33 +195,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qix-7W-frf">
-                                <rect key="frame" x="82" y="144" width="30" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qix-7W-frf">
+                                <rect key="frame" x="82" y="164" width="211" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8b-2P-XHq">
-                                <rect key="frame" x="167" y="564" width="41" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8b-2P-XHq">
+                                <rect key="frame" x="167" y="543" width="45" height="30"/>
                                 <state key="normal" title="Home"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8TV-Jw-KYz">
-                                <rect key="frame" x="88" y="241" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAz-le-Nae">
+                                <rect key="frame" x="0.0" y="214" width="355" height="281"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qix-7W-frf" firstAttribute="top" secondItem="pT0-HJ-BRH" secondAttribute="top" constant="100" id="0U7-aD-t2t"/>
+                            <constraint firstItem="M8b-2P-XHq" firstAttribute="top" secondItem="NAz-le-Nae" secondAttribute="bottom" constant="48" id="2Ae-xC-dNp"/>
+                            <constraint firstItem="NAz-le-Nae" firstAttribute="leading" secondItem="pT0-HJ-BRH" secondAttribute="leading" id="DQ7-p5-o3m"/>
+                            <constraint firstItem="pT0-HJ-BRH" firstAttribute="trailing" secondItem="NAz-le-Nae" secondAttribute="trailing" constant="20" id="I58-2T-WmK"/>
+                            <constraint firstItem="pT0-HJ-BRH" firstAttribute="trailing" secondItem="qix-7W-frf" secondAttribute="trailing" constant="82" id="Ity-Tl-0Ei"/>
+                            <constraint firstItem="M8b-2P-XHq" firstAttribute="centerX" secondItem="qix-7W-frf" secondAttribute="centerX" id="PxF-Tu-JL3"/>
+                            <constraint firstItem="qix-7W-frf" firstAttribute="leading" secondItem="pT0-HJ-BRH" secondAttribute="leading" constant="82" id="g9O-rS-bSd"/>
+                            <constraint firstItem="NAz-le-Nae" firstAttribute="top" secondItem="qix-7W-frf" secondAttribute="bottom" constant="29" id="nx2-fj-Q4m"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="pT0-HJ-BRH"/>
                     </view>
+                    <connections>
+                        <outlet property="eventDateLabel" destination="qix-7W-frf" id="OAF-y0-MWF"/>
+                        <outlet property="eventsDayDisplayLabel" destination="NAz-le-Nae" id="7zH-EU-CDx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Sq-eT-8iU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2620" y="-586"/>
+            <point key="canvasLocation" x="2620" y="-586.05697151424295"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hJx-VJ-AfL">
