@@ -11,5 +11,12 @@ import UIKit
 
 class EventDayViewController: UIViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    func displayEventsByDay() {
+        
+    }
     
 }

@@ -10,5 +10,13 @@ import Foundation
 import UIKit
 
 class MainViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+//        let events = CoreDataHelper.retrieveEvents()
+//        for event in events {
+//            print(event.eventDescription)
+//            print(event.eventDate)
+//        }
+    }
     
 }

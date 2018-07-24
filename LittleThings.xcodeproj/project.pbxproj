@@ -15,6 +15,8 @@
 		FC4B7A082105956C0066D359 /* EventDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A072105956C0066D359 /* EventDayViewController.swift */; };
 		FC4B7A0A210595840066D359 /* ActivitiesMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A09210595840066D359 /* ActivitiesMainViewController.swift */; };
 		FC4B7A18210597630066D359 /* ListEventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A17210597630066D359 /* ListEventsTableViewCell.swift */; };
+		FC4B7A1B21064E430066D359 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A1A21064E430066D359 /* CoreDataHelper.swift */; };
+		FC4B7A1D21068A6E0066D359 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A1C21068A6E0066D359 /* Alerts.swift */; };
 		FCE153042105829A008682EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE153032105829A008682EB /* AppDelegate.swift */; };
 		FCE153092105829A008682EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE153072105829A008682EB /* Main.storyboard */; };
 		FCE1530C2105829A008682EB /* LittleThings.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCE1530A2105829A008682EB /* LittleThings.xcdatamodeld */; };
@@ -33,6 +35,8 @@
 		FC4B7A072105956C0066D359 /* EventDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDayViewController.swift; sourceTree = "<group>"; };
 		FC4B7A09210595840066D359 /* ActivitiesMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesMainViewController.swift; sourceTree = "<group>"; };
 		FC4B7A17210597630066D359 /* ListEventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEventsTableViewCell.swift; sourceTree = "<group>"; };
+		FC4B7A1A21064E430066D359 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		FC4B7A1C21068A6E0066D359 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		FCE153002105829A008682EB /* LittleThings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleThings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE153032105829A008682EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCE153082105829A008682EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,6 +112,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		FC4B7A1921064E310066D359 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FC4B7A1A21064E430066D359 /* CoreDataHelper.swift */,
+				FC4B7A1C21068A6E0066D359 /* Alerts.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		FCE152F721058299008682EB = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +142,7 @@
 		FCE153022105829A008682EB /* LittleThings */ = {
 			isa = PBXGroup;
 			children = (
+				FC4B7A1921064E310066D359 /* Helpers */,
 				FC4B79FE210586740066D359 /* Models */,
 				FC4B79FD2105866F0066D359 /* Views */,
 				FC4B79FC210586600066D359 /* Controllers */,
@@ -260,6 +274,8 @@
 				FCE153042105829A008682EB /* AppDelegate.swift in Sources */,
 				FC4B7A18210597630066D359 /* ListEventsTableViewCell.swift in Sources */,
 				FCE1530C2105829A008682EB /* LittleThings.xcdatamodeld in Sources */,
+				FC4B7A1D21068A6E0066D359 /* Alerts.swift in Sources */,
+				FC4B7A1B21064E430066D359 /* CoreDataHelper.swift in Sources */,
 				FC4B7A082105956C0066D359 /* EventDayViewController.swift in Sources */,
 				FC4B7A042105871A0066D359 /* CreateEventViewController.swift in Sources */,
 			);
