@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+import FirebaseAuth
+import FirebaseDatabase
 
 class CreateEventViewController: UIViewController {
     
@@ -15,34 +17,37 @@ class CreateEventViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    var ref: DatabaseReference!
     var event: Event?
     
     @IBOutlet weak var inputEventTextField: UITextField!
     
     @IBAction func saveButtonPressed(_ sender: Any) {
+        
         if inputEventTextField.text == "" {
-            let alert = Alerts.createAlert(title: "Cannot input empty event!", message: "Please enter event.")
-            self.present(alert, animated: true, completion: nil)
+            let alertErr = Alerts.createAlert(title: "Cannot save empty event!", message: "Please input event.")
+            self.present(alertErr, animated: true, completion: nil)
             return
         }
         
-        event = CoreDataHelper.newEvent()
-        event?.eventDescription = inputEventTextField.text
-//        event?.eventDate = convertDateFormatToString(date: Date())
-        event?.eventDate = "05/12/16"
-        
+        let eventDescription = inputEventTextField.text
+        let eventDate = convertDateFormatToString(date: Date())
         inputEventTextField.resignFirstResponder()
         inputEventTextField.text = ""
         
-        CoreDataHelper.saveEvent()
+        //Saves event to Firebase
+        ref = Database.database().reference()
+        let user = Auth.auth().currentUser
+        ref.child("users").child((user?.uid)!).child("Events").child(eventDate).childByAutoId().setValue(eventDescription)
         
         let alert = Alerts.createAlert(title: "Event Saved!", message: "")
         self.present(alert, animated: true, completion: nil)
+
     }
     
     func convertDateFormatToString(date: Date) -> String {
         let dateformatter = DateFormatter()
-        dateformatter.dateFormat = "MM/dd/yy"
+        dateformatter.dateFormat = "MM-dd-yyyy"
         let dateString = dateformatter.string(from: Date())
         
         return dateString

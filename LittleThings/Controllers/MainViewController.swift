@@ -8,15 +8,33 @@
 
 import Foundation
 import UIKit
+import FirebaseAuth
+import FirebaseUI
 
 class MainViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let events = CoreDataHelper.retrieveEvents()
-//        for event in events {
-//            print(event.eventDescription)
-//            print(event.eventDate)
-//        }
+        handleLogin()
     }
     
+    func handleLogin() {
+        guard let authUI = FUIAuth.defaultAuthUI()
+            else { return }
+        authUI.delegate = self
+        let authViewController = authUI.authViewController()
+        present(authViewController, animated: true)
+    }
+    
+}
+
+extension MainViewController: FUIAuthDelegate {
+    func authUI(_ authUI: FUIAuth, didSignInWith user: User?, error: Error?) {
+        if let error = error {
+            assertionFailure("Error signing in: \(error.localizedDescription)")
+            return
+        }
+        
+        print("handle user signup / login")
+    }
 }

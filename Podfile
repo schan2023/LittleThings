@@ -7,5 +7,8 @@ target 'LittleThings' do
 
   # Pods for LittleThings
   pod 'Alamofire', '~> 4.7'
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'FirebaseUI'
 
 end
