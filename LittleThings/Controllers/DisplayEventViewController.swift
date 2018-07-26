@@ -15,6 +15,7 @@ import FirebaseDatabase
 class DisplayEventViewController: UIViewController {
     
     var arrayOfEvents: [String] = [String]()
+    var currentDate: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +30,7 @@ class DisplayEventViewController: UIViewController {
         generateEvent(completionHandler: handleArrayOfEventsCompletion)
     }
     
-    func generateEvent(completionHandler: @escaping ([String]) -> Void) -> Void {
+    func generateEvent(completionHandler: @escaping ([String], String) -> Void) -> Void {
         
         //Get snapshot of user.uid
         let ref = Database.database().reference()
@@ -54,17 +55,20 @@ class DisplayEventViewController: UIViewController {
                     if key != "date" {
                         self.arrayOfEvents.append(value)
                     }
+                    else {
+                        self.currentDate = value
+                    }
                 }
                 print(self.arrayOfEvents)
-                completionHandler(self.arrayOfEvents)
+                completionHandler(self.arrayOfEvents, self.currentDate!)
             })
         })
         
     }
     
-    func handleArrayOfEventsCompletion(arrayOfEventsList: [String]) -> Void {
+    func handleArrayOfEventsCompletion(arrayOfEventsList: [String], currentDateVar: String) -> Void {
         arrayOfEvents = arrayOfEventsList
-        
+        currentDate = currentDateVar
         //generate random event
         returnRandomEvent(eventsArray: arrayOfEvents)
     }
@@ -89,6 +93,7 @@ class DisplayEventViewController: UIViewController {
             print("inside display event day segue")
             let destination = segue.destination as! EventDayViewController
             destination.currentEventsDay = arrayOfEvents
+            destination.currentEventDate = currentDate
             
         default:
             print("unexpected segue identifier")

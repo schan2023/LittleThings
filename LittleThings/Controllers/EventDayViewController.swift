@@ -12,6 +12,7 @@ import UIKit
 class EventDayViewController: UIViewController {
     
     var currentEventsDay: [String]?
+    var currentEventDate: String?
     
     @IBOutlet weak var eventDateLabel: UILabel!
     @IBOutlet weak var eventsDayDisplayLabel: UILabel!
@@ -24,7 +25,8 @@ class EventDayViewController: UIViewController {
     func displayEventsByDay() {
         print("inside event day view")
         let eventString = currentEventsDay?.joined(separator: ", ")
-        print(eventString)
+        eventDateLabel.text = currentEventDate
+        eventsDayDisplayLabel.text = eventString
     }
     
 }
