@@ -33,7 +33,7 @@ class CreateEventViewController: UIViewController {
         
         //Retrieves data from input field
         let eventDescription = inputEventTextField.text
-        let eventDate = "07-25-2018"
+        let eventDate = "07-26-2018"
         inputEventTextField.resignFirstResponder()
         inputEventTextField.text = ""
         
