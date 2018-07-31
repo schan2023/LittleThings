@@ -14,11 +14,17 @@ import FirebaseDatabase
 
 class DisplayEventViewController: UIViewController {
     
+    
+    @IBOutlet weak var generateButton: UIButton!
+    @IBOutlet weak var goToDayButton: UIButton!
+    
     var arrayOfEvents: [String] = [String]()
     var currentDate: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        fixButtons(button: generateButton)
+        fixButtons(button: goToDayButton)
         generateEvent(completionHandler: handleArrayOfEventsCompletion)
     }
     
@@ -80,6 +86,11 @@ class DisplayEventViewController: UIViewController {
 
         //Set label as event description
         eventLabel.text = eventsArray[randomInt]
+    }
+    
+    func fixButtons(button: UIButton) {
+        button.layer.cornerRadius = 10
+        button.clipsToBounds = true
     }
     
     //Use segue identifier to go to day function
