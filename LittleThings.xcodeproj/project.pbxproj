@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		8CB3DB3355A76C4CA3B304FE /* Pods_LittleThings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0016527CE55CF615DA4C251D /* Pods_LittleThings.framework */; };
+		FC34F818210FD82300455F8C /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC34F817210FD82200455F8C /* FavoritesTableViewController.swift */; };
+		FC34F81D2110CEE400455F8C /* LeckerliOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC34F81C2110CEE300455F8C /* LeckerliOne-Regular.ttf */; };
+		FC34F8222110D02C00455F8C /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC34F81E2110D02300455F8C /* Quicksand-Bold.ttf */; };
+		FC34F8232110D02C00455F8C /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC34F81F2110D02600455F8C /* Quicksand-Light.ttf */; };
+		FC34F8242110D02C00455F8C /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC34F8202110D02800455F8C /* Quicksand-Medium.ttf */; };
+		FC34F8252110D02C00455F8C /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC34F8212110D02A00455F8C /* Quicksand-Regular.ttf */; };
 		FC4B7A00210586BD0066D359 /* ActivitiesMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC4B79FF210586BD0066D359 /* ActivitiesMain.storyboard */; };
 		FC4B7A02210587020066D359 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A01210587020066D359 /* MainViewController.swift */; };
 		FC4B7A042105871A0066D359 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A032105871A0066D359 /* CreateEventViewController.swift */; };
@@ -29,6 +35,12 @@
 		0016527CE55CF615DA4C251D /* Pods_LittleThings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LittleThings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59B4E1E67720E2845ADC1762 /* Pods-LittleThings.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittleThings.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LittleThings/Pods-LittleThings.debug.xcconfig"; sourceTree = "<group>"; };
 		5B8E6826D2682BC9C4A68098 /* Pods-LittleThings.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittleThings.release.xcconfig"; path = "Pods/Target Support Files/Pods-LittleThings/Pods-LittleThings.release.xcconfig"; sourceTree = "<group>"; };
+		FC34F817210FD82200455F8C /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
+		FC34F81C2110CEE300455F8C /* LeckerliOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeckerliOne-Regular.ttf"; sourceTree = "<group>"; };
+		FC34F81E2110D02300455F8C /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Bold.ttf"; sourceTree = "<group>"; };
+		FC34F81F2110D02600455F8C /* Quicksand-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Light.ttf"; sourceTree = "<group>"; };
+		FC34F8202110D02800455F8C /* Quicksand-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Medium.ttf"; sourceTree = "<group>"; };
+		FC34F8212110D02A00455F8C /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
 		FC4B79FF210586BD0066D359 /* ActivitiesMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ActivitiesMain.storyboard; sourceTree = "<group>"; };
 		FC4B7A01210587020066D359 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FC4B7A032105871A0066D359 /* CreateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +89,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FC34F81B2110CEB500455F8C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FC34F81E2110D02300455F8C /* Quicksand-Bold.ttf */,
+				FC34F8212110D02A00455F8C /* Quicksand-Regular.ttf */,
+				FC34F81C2110CEE300455F8C /* LeckerliOne-Regular.ttf */,
+				FC34F81F2110D02600455F8C /* Quicksand-Light.ttf */,
+				FC34F8202110D02800455F8C /* Quicksand-Medium.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		FC4B79FB2105865A0066D359 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +119,7 @@
 				FC4B7A05210587E90066D359 /* DisplayEventViewController.swift */,
 				FC4B7A072105956C0066D359 /* EventDayViewController.swift */,
 				FC4B7A09210595840066D359 /* ActivitiesMainViewController.swift */,
+				FC34F817210FD82200455F8C /* FavoritesTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -152,6 +177,7 @@
 				FCE153032105829A008682EB /* AppDelegate.swift */,
 				FCE1530D210582A7008682EB /* Assets.xcassets */,
 				FCE15312210582A7008682EB /* Info.plist */,
+				FC34F81B2110CEB500455F8C /* Fonts */,
 				FC4B7A1E2107C7FA0066D359 /* GoogleService-Info.plist */,
 				FCE1530A2105829A008682EB /* LittleThings.xcdatamodeld */,
 			);
@@ -219,11 +245,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC34F8222110D02C00455F8C /* Quicksand-Bold.ttf in Resources */,
 				FCE15311210582A7008682EB /* LaunchScreen.storyboard in Resources */,
+				FC34F8242110D02C00455F8C /* Quicksand-Medium.ttf in Resources */,
 				FCE1530E210582A7008682EB /* Assets.xcassets in Resources */,
 				FC4B7A1F2107C7FB0066D359 /* GoogleService-Info.plist in Resources */,
+				FC34F81D2110CEE400455F8C /* LeckerliOne-Regular.ttf in Resources */,
 				FC4B7A00210586BD0066D359 /* ActivitiesMain.storyboard in Resources */,
 				FCE153092105829A008682EB /* Main.storyboard in Resources */,
+				FC34F8232110D02C00455F8C /* Quicksand-Light.ttf in Resources */,
+				FC34F8252110D02C00455F8C /* Quicksand-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +373,7 @@
 				FC4B7A0A210595840066D359 /* ActivitiesMainViewController.swift in Sources */,
 				FCE153042105829A008682EB /* AppDelegate.swift in Sources */,
 				FC4B7A18210597630066D359 /* ListEventsTableViewCell.swift in Sources */,
+				FC34F818210FD82300455F8C /* FavoritesTableViewController.swift in Sources */,
 				FCE1530C2105829A008682EB /* LittleThings.xcdatamodeld in Sources */,
 				FC4B7A1D21068A6E0066D359 /* Alerts.swift in Sources */,
 				FC4B7A1B21064E430066D359 /* CoreDataHelper.swift in Sources */,

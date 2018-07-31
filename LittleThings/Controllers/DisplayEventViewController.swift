@@ -49,7 +49,7 @@ class DisplayEventViewController: UIViewController {
             let foundDate = foundDateArray![randNum] as! String
             
             //Get snapshot of EventDays.foundDate
-            ref.child("EventDays").child(foundDate).observeSingleEvent(of: .value, with: { (snap) in
+            ref.child((user?.uid)!).child("EventDays").child(foundDate).observeSingleEvent(of: .value, with: { (snap) in
                 let snapDict = snap.value as! NSDictionary
                 for (key, value) in snapDict as! [String : String] {
                     if key != "date" {
@@ -59,7 +59,6 @@ class DisplayEventViewController: UIViewController {
                         self.currentDate = value
                     }
                 }
-                print(self.arrayOfEvents)
                 completionHandler(self.arrayOfEvents, self.currentDate!)
             })
         })

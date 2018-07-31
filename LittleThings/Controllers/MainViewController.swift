@@ -13,9 +13,19 @@ import FirebaseUI
 
 class MainViewController: UIViewController {
     
+    @IBOutlet weak var addEventButton: UIButton!
+    @IBOutlet weak var generateEventButton: UIButton!
+    @IBOutlet weak var activitiesButton: UIButton!
+    @IBOutlet weak var favoritesButton: UIButton!
+    @IBOutlet weak var titleLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        handleLogin()
+//        handleLogin()
+        fixButtons(button: addEventButton)
+        fixButtons(button: generateEventButton)
+        fixButtons(button: activitiesButton)
+        fixButtons(button: favoritesButton)
     }
     
     func handleLogin() {
@@ -24,6 +34,11 @@ class MainViewController: UIViewController {
         authUI.delegate = self
         let authViewController = authUI.authViewController()
         present(authViewController, animated: true)
+    }
+    
+    func fixButtons(button: UIButton) {
+        button.layer.cornerRadius = 10
+        button.clipsToBounds = true
     }
     
 }

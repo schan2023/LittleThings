@@ -13,8 +13,13 @@ import FirebaseDatabase
 
 class CreateEventViewController: UIViewController {
     
+    @IBOutlet weak var inputEventLabel: UILabel!
+    @IBOutlet weak var saveButton: UIButton!
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad()        
+        saveButton.layer.cornerRadius = 10
+        saveButton.clipsToBounds = true
     }
     
     var ref: DatabaseReference!
@@ -40,24 +45,24 @@ class CreateEventViewController: UIViewController {
         //Saves event to Firebase
         ref = Database.database().reference()
         let user = Auth.auth().currentUser
-        ref.child("EventDays").child(eventDate).child("date").observeSingleEvent(of: .value, with: {(snapshot) -> Void in
+        ref.child((user?.uid)!).child("EventDays").child(eventDate).child("date").observeSingleEvent(of: .value, with: {(snapshot) -> Void in
             if snapshot.exists() {
                 print("Snapshot value exists: \(snapshot.value)")
                 let snapValue = snapshot.value as! String
                 if snapValue == eventDate {
                     print("Add events to current reference: EventDays->currentDate->event")
-                    self.ref.child("EventDays").child(eventDate).childByAutoId().setValue(eventDescription)
+                    self.ref.child((user?.uid)!).child("EventDays").child(eventDate).childByAutoId().setValue(eventDescription)
                 }
                 else {
                     print("new item w/ index to first tree, add new node to EventDays->currentDate")
-                    self.ref.child("EventDays").child(eventDate).child("date").setValue(eventDate)
+                    self.ref.child((user?.uid)!).child("EventDays").child(eventDate).child("date").setValue(eventDate)
                     self.updateEventDays(user: user, id: eventDate)
                 }
             }
             else {
                 print("Snapshot value does not exist, new item w/ index to first tree, add new node to EventDays->currentDate")
-                self.ref.child("EventDays").child(eventDate).child("date").setValue(eventDate)
-                self.ref.child("EventDays").child(eventDate).childByAutoId().setValue(eventDescription)
+                self.ref.child((user?.uid)!).child("EventDays").child(eventDate).child("date").setValue(eventDate)
+                self.ref.child((user?.uid)!).child("EventDays").child(eventDate).childByAutoId().setValue(eventDescription)
                 self.updateEventDays(user: user, id: eventDate)
             }
 
