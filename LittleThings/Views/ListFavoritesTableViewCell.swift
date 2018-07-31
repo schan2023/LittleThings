@@ -7,3 +7,10 @@
 //
 
 import Foundation
+import UIKit
+
+class ListFavoritesTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var dateLabel: UILabel!
+    
+}
