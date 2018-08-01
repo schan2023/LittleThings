@@ -181,7 +181,7 @@
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Little Things" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pN-2N-ol3">
                                 <rect key="frame" x="0.0" y="64" width="414" height="319"/>
-                                <color key="backgroundColor" red="0.69578067555147061" green="0.54117647058823526" blue="0.72379174325980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.68235294120000001" green="0.54117647059999996" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="319" id="I2Y-fp-fbI"/>
                                 </constraints>
@@ -260,20 +260,58 @@
             </objects>
             <point key="canvasLocation" x="1928.985507246377" y="681.52173913043487"/>
         </scene>
-        <!--View Controller-->
+        <!--Display Favorited Day View Controller-->
         <scene sceneID="bTw-gP-y0p">
             <objects>
-                <viewController id="W5E-0m-ayS" sceneMemberID="viewController">
+                <viewController id="W5E-0m-ayS" customClass="DisplayFavoritedDayViewController" customModule="LittleThings" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hCw-DE-Bat">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxn-jq-Ep3">
+                                <rect key="frame" x="63" y="151" width="292" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRG-fd-pDV">
+                                <rect key="frame" x="20" y="226" width="374" height="278"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="4bq-mY-WX6"/>
+                                    <constraint firstAttribute="height" constant="278" id="8dF-Q5-Hll"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5t-Gc-vv1">
+                                <rect key="frame" x="187" y="558" width="41" height="30"/>
+                                <state key="normal" title="Home"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rJV-3s-ENe" firstAttribute="bottom" secondItem="v5t-Gc-vv1" secondAttribute="bottom" constant="148" id="030-Cq-LUS"/>
+                            <constraint firstItem="LRG-fd-pDV" firstAttribute="leading" secondItem="rJV-3s-ENe" secondAttribute="leading" constant="20" id="46n-Gy-Hcf"/>
+                            <constraint firstItem="v5t-Gc-vv1" firstAttribute="leading" secondItem="rJV-3s-ENe" secondAttribute="leading" constant="187" id="7ZP-n8-6wf"/>
+                            <constraint firstItem="rJV-3s-ENe" firstAttribute="trailing" secondItem="v5t-Gc-vv1" secondAttribute="trailing" constant="186" id="9vq-ns-IVa"/>
+                            <constraint firstItem="v5t-Gc-vv1" firstAttribute="top" secondItem="LRG-fd-pDV" secondAttribute="bottom" constant="54" id="Kel-gt-mwK"/>
+                            <constraint firstItem="LRG-fd-pDV" firstAttribute="top" secondItem="dxn-jq-Ep3" secondAttribute="bottom" constant="54" id="MGB-Fy-Ode"/>
+                            <constraint firstItem="rJV-3s-ENe" firstAttribute="trailing" secondItem="LRG-fd-pDV" secondAttribute="trailing" constant="20" id="ZQZ-uD-npD"/>
+                            <constraint firstItem="dxn-jq-Ep3" firstAttribute="top" secondItem="rJV-3s-ENe" secondAttribute="top" constant="87" id="dfm-35-Nsx"/>
+                            <constraint firstItem="rJV-3s-ENe" firstAttribute="trailing" secondItem="dxn-jq-Ep3" secondAttribute="trailing" constant="59" id="ozD-lm-xpD"/>
+                            <constraint firstItem="dxn-jq-Ep3" firstAttribute="leading" secondItem="rJV-3s-ENe" secondAttribute="leading" constant="63" id="wIh-KY-Xiu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="rJV-3s-ENe"/>
                     </view>
+                    <connections>
+                        <outlet property="favoritedEventDateLabel" destination="dxn-jq-Ep3" id="L7E-nz-vey"/>
+                        <outlet property="favoritedEventsDayDisplayLabel" destination="LRG-fd-pDV" id="aef-6k-c90"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CUF-Un-uxF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2761" y="606"/>
+            <point key="canvasLocation" x="2760.8695652173915" y="605.70652173913049"/>
         </scene>
         <!--Display Event View Controller-->
         <scene sceneID="a9q-cf-PCZ">

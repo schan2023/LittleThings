@@ -21,14 +21,16 @@ class EventDayViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        displayEventsByDay()
     }
     
-    func displayEventsByDay() {
-        print("inside event day view")
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
         let eventString = currentEventsDay?.joined(separator: ", ")
         eventDateLabel.text = currentEventDate
         eventsDayDisplayLabel.text = eventString
+        
     }
     
     @IBAction func homeButton(_ sender: Any) {

@@ -53,4 +53,21 @@ class FavoritesTableViewController: UITableViewController {
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        guard let identifier = segue.identifier else { return }
+        
+        switch identifier {
+        case "displayFavoritesDay":
+
+            guard let indexPath = tableView.indexPathForSelectedRow else { return }
+            let date = favoriteDates[indexPath.row]
+            let destination = segue.destination as! DisplayFavoritedDayViewController
+            destination.date = date
+
+        default:
+            print("unexpected segue identifier")
+        }
+    }
+    
 }
