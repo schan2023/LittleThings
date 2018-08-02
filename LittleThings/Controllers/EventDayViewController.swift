@@ -19,6 +19,9 @@ class EventDayViewController: UIViewController {
     @IBOutlet weak var eventDateLabel: UILabel!
     @IBOutlet weak var eventsDayDisplayLabel: UILabel!
     
+    @IBOutlet weak var faveBtn: UIButton!
+    @IBOutlet weak var homeBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -30,6 +33,9 @@ class EventDayViewController: UIViewController {
         let eventString = currentEventsDay?.joined(separator: ", ")
         eventDateLabel.text = currentEventDate
         eventsDayDisplayLabel.text = eventString
+        
+        fixButtons(button: faveBtn)
+        fixButtons(button: homeBtn)
         
     }
     
@@ -61,7 +67,14 @@ class EventDayViewController: UIViewController {
                 ref.child("users").child((user?.uid)!).child("Favorites").childByAutoId().setValue(self.currentEventDate)
             }
         })
+        
+        let alert = Alerts.createAlert(title: "Event Favorited!", message: "")
+        self.present(alert, animated: true, completion: nil)
     }
     
+    func fixButtons(button: UIButton) {
+        button.layer.cornerRadius = 10
+        button.clipsToBounds = true
+    }
     
 }

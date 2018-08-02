@@ -25,15 +25,15 @@ class DisplayEventViewController: UIViewController {
         super.viewDidLoad()
         fixButtons(button: generateButton)
         fixButtons(button: goToDayButton)
-//        generateEvent(completionHandler: handleArrayOfEventsCompletion)
+        generateEvent(completionHandler: handleArrayOfEventsCompletion)
     }
     
     @IBOutlet weak var eventLabel: UILabel!
     
     @IBAction func generateButtonTapped(_ sender: Any) {
         print("generate button tapped!")
-//        arrayOfEvents.removeAll()
-//        generateEvent(completionHandler: handleArrayOfEventsCompletion)
+        arrayOfEvents.removeAll()
+        generateEvent(completionHandler: handleArrayOfEventsCompletion)
     }
     
     func generateEvent(completionHandler: @escaping ([String], String) -> Void) -> Void {

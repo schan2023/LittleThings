@@ -19,9 +19,13 @@ class DisplayFavoritedDayViewController: UIViewController {
     @IBOutlet weak var favoritedEventDateLabel: UILabel!
     @IBOutlet weak var favoritedEventsDayDisplayLabel: UILabel!
     
+    @IBOutlet weak var homeBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         retrieveFavoritedEvent(completionHandler: handleFavoritesArrayCompletion)
+        homeBtn.layer.cornerRadius = 10
+        homeBtn.clipsToBounds = true
     }
     
     func retrieveFavoritedEvent(completionHandler: @escaping ([String]) -> Void) {
@@ -43,4 +47,9 @@ class DisplayFavoritedDayViewController: UIViewController {
         favoritedEventDateLabel.text = date
         favoritedEventsDayDisplayLabel.text = favoriteEventsString
     }
+    
+    @IBAction func homeButtonPressed(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
+    
 }

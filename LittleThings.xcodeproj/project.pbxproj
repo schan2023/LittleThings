@@ -15,6 +15,8 @@
 		FC34F8242110D02C00455F8C /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC34F8202110D02800455F8C /* Quicksand-Medium.ttf */; };
 		FC34F8252110D02C00455F8C /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC34F8212110D02A00455F8C /* Quicksand-Regular.ttf */; };
 		FC34F8272111240800455F8C /* DisplayFavoritedDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC34F8262111240800455F8C /* DisplayFavoritedDayViewController.swift */; };
+		FC34F829211379A400455F8C /* DisplayActOfKindnessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC34F828211379A300455F8C /* DisplayActOfKindnessViewController.swift */; };
+		FC34F82B2113870900455F8C /* CreateEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC34F82A2113870900455F8C /* CreateEvent.swift */; };
 		FC4B7A00210586BD0066D359 /* ActivitiesMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC4B79FF210586BD0066D359 /* ActivitiesMain.storyboard */; };
 		FC4B7A02210587020066D359 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A01210587020066D359 /* MainViewController.swift */; };
 		FC4B7A042105871A0066D359 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A032105871A0066D359 /* CreateEventViewController.swift */; };
@@ -43,6 +45,8 @@
 		FC34F8202110D02800455F8C /* Quicksand-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Medium.ttf"; sourceTree = "<group>"; };
 		FC34F8212110D02A00455F8C /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
 		FC34F8262111240800455F8C /* DisplayFavoritedDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayFavoritedDayViewController.swift; sourceTree = "<group>"; };
+		FC34F828211379A300455F8C /* DisplayActOfKindnessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayActOfKindnessViewController.swift; sourceTree = "<group>"; };
+		FC34F82A2113870900455F8C /* CreateEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEvent.swift; sourceTree = "<group>"; };
 		FC4B79FF210586BD0066D359 /* ActivitiesMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ActivitiesMain.storyboard; sourceTree = "<group>"; };
 		FC4B7A01210587020066D359 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FC4B7A032105871A0066D359 /* CreateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +127,7 @@
 				FC4B7A09210595840066D359 /* ActivitiesMainViewController.swift */,
 				FC34F817210FD82200455F8C /* FavoritesTableViewController.swift */,
 				FC34F8262111240800455F8C /* DisplayFavoritedDayViewController.swift */,
+				FC34F828211379A300455F8C /* DisplayActOfKindnessViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 			children = (
 				FC4B7A1A21064E430066D359 /* CoreDataHelper.swift */,
 				FC4B7A1C21068A6E0066D359 /* Alerts.swift */,
+				FC34F82A2113870900455F8C /* CreateEvent.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -372,6 +378,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC4B7A06210587E90066D359 /* DisplayEventViewController.swift in Sources */,
+				FC34F829211379A400455F8C /* DisplayActOfKindnessViewController.swift in Sources */,
+				FC34F82B2113870900455F8C /* CreateEvent.swift in Sources */,
 				FC34F8272111240800455F8C /* DisplayFavoritedDayViewController.swift in Sources */,
 				FC4B7A02210587020066D359 /* MainViewController.swift in Sources */,
 				FC4B7A0A210595840066D359 /* ActivitiesMainViewController.swift in Sources */,
