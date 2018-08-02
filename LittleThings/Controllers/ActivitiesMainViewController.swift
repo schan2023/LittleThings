@@ -11,9 +11,20 @@ import UIKit
 
 class ActivitiesMainViewController: UIViewController {
     
+    @IBOutlet weak var adviceButton: UIButton!
+    @IBOutlet weak var kindnessButton: UIButton!
+    @IBOutlet weak var complimentsButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        fixButtons(button: adviceButton)
+        fixButtons(button: kindnessButton)
+        fixButtons(button: complimentsButton)
+    }
+    
+    func fixButtons(button: UIButton) {
+        button.layer.cornerRadius = 10
+        button.clipsToBounds = true
     }
     
 }
