@@ -11,6 +11,13 @@ import UIKit
 
 class ListFavoritesTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var designView: UIView!
     @IBOutlet weak var dateLabel: UILabel!
+    
+    override func layoutSubviews() {
+        designView.layer.cornerRadius = 10
+        designView.layer.shadowOffset = CGSize(width: 0, height: 1)
+        designView.layer.shadowOpacity = Float(0.2)
+    }
     
 }

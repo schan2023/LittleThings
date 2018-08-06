@@ -18,6 +18,7 @@
 		FC34F829211379A400455F8C /* DisplayActOfKindnessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC34F828211379A300455F8C /* DisplayActOfKindnessViewController.swift */; };
 		FC34F82B2113870900455F8C /* CreateEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC34F82A2113870900455F8C /* CreateEvent.swift */; };
 		FC34F82D2113A5A700455F8C /* DisplayComplimentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC34F82C2113A5A700455F8C /* DisplayComplimentViewController.swift */; };
+		FC34F8342115147C00455F8C /* vector-cloud-png.png in Resources */ = {isa = PBXBuildFile; fileRef = FC34F8332115147C00455F8C /* vector-cloud-png.png */; };
 		FC4B7A00210586BD0066D359 /* ActivitiesMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC4B79FF210586BD0066D359 /* ActivitiesMain.storyboard */; };
 		FC4B7A02210587020066D359 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A01210587020066D359 /* MainViewController.swift */; };
 		FC4B7A042105871A0066D359 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A032105871A0066D359 /* CreateEventViewController.swift */; };
@@ -49,6 +50,7 @@
 		FC34F828211379A300455F8C /* DisplayActOfKindnessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayActOfKindnessViewController.swift; sourceTree = "<group>"; };
 		FC34F82A2113870900455F8C /* CreateEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEvent.swift; sourceTree = "<group>"; };
 		FC34F82C2113A5A700455F8C /* DisplayComplimentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayComplimentViewController.swift; sourceTree = "<group>"; };
+		FC34F8332115147C00455F8C /* vector-cloud-png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vector-cloud-png.png"; sourceTree = "<group>"; };
 		FC4B79FF210586BD0066D359 /* ActivitiesMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ActivitiesMain.storyboard; sourceTree = "<group>"; };
 		FC4B7A01210587020066D359 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FC4B7A032105871A0066D359 /* CreateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,14 @@
 				FC34F8202110D02800455F8C /* Quicksand-Medium.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FC34F82E2114DBA100455F8C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FC34F8332115147C00455F8C /* vector-cloud-png.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		FC4B79FB2105865A0066D359 /* Storyboards */ = {
@@ -181,6 +191,7 @@
 		FCE153022105829A008682EB /* LittleThings */ = {
 			isa = PBXGroup;
 			children = (
+				FC34F82E2114DBA100455F8C /* Images */,
 				FC4B7A1921064E310066D359 /* Helpers */,
 				FC4B79FE210586740066D359 /* Models */,
 				FC4B79FD2105866F0066D359 /* Views */,
@@ -262,6 +273,7 @@
 				FC34F8242110D02C00455F8C /* Quicksand-Medium.ttf in Resources */,
 				FCE1530E210582A7008682EB /* Assets.xcassets in Resources */,
 				FC4B7A1F2107C7FB0066D359 /* GoogleService-Info.plist in Resources */,
+				FC34F8342115147C00455F8C /* vector-cloud-png.png in Resources */,
 				FC34F81D2110CEE400455F8C /* LeckerliOne-Regular.ttf in Resources */,
 				FC4B7A00210586BD0066D359 /* ActivitiesMain.storyboard in Resources */,
 				FCE153092105829A008682EB /* Main.storyboard in Resources */,
