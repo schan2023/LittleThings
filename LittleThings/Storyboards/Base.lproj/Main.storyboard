@@ -20,9 +20,6 @@
         <array key="Montserrat-Medium.ttf">
             <string>Montserrat-Medium</string>
         </array>
-        <array key="Montserrat-Regular.ttf">
-            <string>Montserrat-Regular</string>
-        </array>
         <array key="Montserrat-SemiBold.ttf">
             <string>Montserrat-SemiBold</string>
         </array>
@@ -111,12 +108,6 @@
                                         <rect key="frame" x="218" y="58" width="57" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What made you smile today?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tm3-tR-laN">
-                                        <rect key="frame" x="73.333333333333343" y="211" width="268.33333333333326" height="22"/>
-                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
-                                        <color key="textColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bdF-fo-hHO">
                                         <rect key="frame" x="73" y="252" width="269" height="60"/>
                                         <constraints>
@@ -136,8 +127,11 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sl-hq-deT">
-                                        <rect key="frame" x="130" y="333" width="154" height="27"/>
-                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                                        <rect key="frame" x="132" y="333" width="150" height="27"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="xLd-AJ-TSA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
                                         <state key="normal" title="Customized Events">
                                             <color key="titleColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -149,14 +143,19 @@
                                         <rect key="frame" x="142" y="52" width="95" height="38"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What made you smile today?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tm3-tR-laN">
+                                        <rect key="frame" x="73" y="202" width="268.33333333333326" height="22"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                        <color key="textColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.49019607840000001" green="0.70196078429999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="bdF-fo-hHO" secondAttribute="trailing" constant="72" id="0sm-95-MNf"/>
                                     <constraint firstItem="3pN-2N-ol3" firstAttribute="top" secondItem="Jj3-4V-M5I" secondAttribute="top" constant="88" id="2v1-Yx-3Gk"/>
-                                    <constraint firstItem="5sl-hq-deT" firstAttribute="leading" secondItem="Jj3-4V-M5I" secondAttribute="leading" constant="130" id="8EV-75-vm1"/>
-                                    <constraint firstAttribute="trailing" secondItem="5sl-hq-deT" secondAttribute="trailing" constant="130" id="At9-Vm-97g"/>
-                                    <constraint firstItem="bdF-fo-hHO" firstAttribute="top" secondItem="Tm3-tR-laN" secondAttribute="bottom" constant="19" id="BlS-X3-aFD"/>
+                                    <constraint firstItem="bdF-fo-hHO" firstAttribute="top" secondItem="Tm3-tR-laN" secondAttribute="bottom" constant="28" id="BlS-X3-aFD"/>
+                                    <constraint firstItem="5sl-hq-deT" firstAttribute="centerX" secondItem="Jj3-4V-M5I" secondAttribute="centerX" id="Dx7-bg-C4O"/>
                                     <constraint firstAttribute="trailing" secondItem="3pN-2N-ol3" secondAttribute="trailing" id="GA2-w0-OPu"/>
                                     <constraint firstAttribute="bottom" secondItem="bdF-fo-hHO" secondAttribute="bottom" constant="71" id="HCL-SP-478"/>
                                     <constraint firstItem="3pN-2N-ol3" firstAttribute="leading" secondItem="Jj3-4V-M5I" secondAttribute="leading" id="LgZ-a8-ax8"/>
@@ -165,7 +164,7 @@
                                     <constraint firstAttribute="height" constant="383" id="WPl-RR-Aoh"/>
                                     <constraint firstItem="bdF-fo-hHO" firstAttribute="centerX" secondItem="Jj3-4V-M5I" secondAttribute="centerX" id="WrY-Nw-i7m"/>
                                     <constraint firstItem="bdF-fo-hHO" firstAttribute="leading" secondItem="Jj3-4V-M5I" secondAttribute="leading" constant="73" id="kkF-Yl-Jcq"/>
-                                    <constraint firstItem="Tm3-tR-laN" firstAttribute="top" secondItem="3pN-2N-ol3" secondAttribute="bottom" constant="23" id="nJL-6D-WFF"/>
+                                    <constraint firstItem="Tm3-tR-laN" firstAttribute="top" secondItem="3pN-2N-ol3" secondAttribute="bottom" constant="14" id="nJL-6D-WFF"/>
                                     <constraint firstItem="Tm3-tR-laN" firstAttribute="centerX" secondItem="Jj3-4V-M5I" secondAttribute="centerX" id="rEJ-4M-oqK"/>
                                     <constraint firstAttribute="width" constant="414" id="u2R-0P-wiQ"/>
                                 </constraints>
