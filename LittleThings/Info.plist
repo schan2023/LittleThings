@@ -7,6 +7,11 @@
 		<string>Quicksand-Bold.ttf</string>
 		<string>LeckerliOne-Regular.ttf</string>
 		<string>Quicksand-Regular.ttf</string>
+		<string>LibreFranklin-Black.ttf</string>
+		<string>LibreFranklin-Bold.ttf</string>
+		<string>LibreFranklin-Medium.ttf</string>
+		<string>LibreFranklin-Regular.ttf</string>
+		<string>LibreFranklin-Light.ttf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>

@@ -19,6 +19,11 @@
 		FC34F82B2113870900455F8C /* CreateEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC34F82A2113870900455F8C /* CreateEvent.swift */; };
 		FC34F82D2113A5A700455F8C /* DisplayComplimentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC34F82C2113A5A700455F8C /* DisplayComplimentViewController.swift */; };
 		FC34F8342115147C00455F8C /* vector-cloud-png.png in Resources */ = {isa = PBXBuildFile; fileRef = FC34F8332115147C00455F8C /* vector-cloud-png.png */; };
+		FC3AD7032118B977003F41A3 /* LibreFranklin-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC3AD6FE2118B976003F41A3 /* LibreFranklin-Bold.ttf */; };
+		FC3AD7042118B977003F41A3 /* LibreFranklin-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC3AD6FF2118B976003F41A3 /* LibreFranklin-Black.ttf */; };
+		FC3AD7052118B977003F41A3 /* LibreFranklin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC3AD7002118B976003F41A3 /* LibreFranklin-Regular.ttf */; };
+		FC3AD7062118B977003F41A3 /* LibreFranklin-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC3AD7012118B976003F41A3 /* LibreFranklin-Light.ttf */; };
+		FC3AD7072118B977003F41A3 /* LibreFranklin-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC3AD7022118B977003F41A3 /* LibreFranklin-Medium.ttf */; };
 		FC4B7A00210586BD0066D359 /* ActivitiesMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC4B79FF210586BD0066D359 /* ActivitiesMain.storyboard */; };
 		FC4B7A02210587020066D359 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A01210587020066D359 /* MainViewController.swift */; };
 		FC4B7A042105871A0066D359 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A032105871A0066D359 /* CreateEventViewController.swift */; };
@@ -51,6 +56,11 @@
 		FC34F82A2113870900455F8C /* CreateEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEvent.swift; sourceTree = "<group>"; };
 		FC34F82C2113A5A700455F8C /* DisplayComplimentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayComplimentViewController.swift; sourceTree = "<group>"; };
 		FC34F8332115147C00455F8C /* vector-cloud-png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vector-cloud-png.png"; sourceTree = "<group>"; };
+		FC3AD6FE2118B976003F41A3 /* LibreFranklin-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-Bold.ttf"; sourceTree = "<group>"; };
+		FC3AD6FF2118B976003F41A3 /* LibreFranklin-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-Black.ttf"; sourceTree = "<group>"; };
+		FC3AD7002118B976003F41A3 /* LibreFranklin-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-Regular.ttf"; sourceTree = "<group>"; };
+		FC3AD7012118B976003F41A3 /* LibreFranklin-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-Light.ttf"; sourceTree = "<group>"; };
+		FC3AD7022118B977003F41A3 /* LibreFranklin-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-Medium.ttf"; sourceTree = "<group>"; };
 		FC4B79FF210586BD0066D359 /* ActivitiesMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ActivitiesMain.storyboard; sourceTree = "<group>"; };
 		FC4B7A01210587020066D359 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FC4B7A032105871A0066D359 /* CreateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +112,11 @@
 		FC34F81B2110CEB500455F8C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				FC3AD6FF2118B976003F41A3 /* LibreFranklin-Black.ttf */,
+				FC3AD6FE2118B976003F41A3 /* LibreFranklin-Bold.ttf */,
+				FC3AD7012118B976003F41A3 /* LibreFranklin-Light.ttf */,
+				FC3AD7022118B977003F41A3 /* LibreFranklin-Medium.ttf */,
+				FC3AD7002118B976003F41A3 /* LibreFranklin-Regular.ttf */,
 				FC34F81E2110D02300455F8C /* Quicksand-Bold.ttf */,
 				FC34F8212110D02A00455F8C /* Quicksand-Regular.ttf */,
 				FC34F81C2110CEE300455F8C /* LeckerliOne-Regular.ttf */,
@@ -268,8 +283,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC3AD7042118B977003F41A3 /* LibreFranklin-Black.ttf in Resources */,
+				FC3AD7052118B977003F41A3 /* LibreFranklin-Regular.ttf in Resources */,
 				FC34F8222110D02C00455F8C /* Quicksand-Bold.ttf in Resources */,
+				FC3AD7062118B977003F41A3 /* LibreFranklin-Light.ttf in Resources */,
 				FCE15311210582A7008682EB /* LaunchScreen.storyboard in Resources */,
+				FC3AD7072118B977003F41A3 /* LibreFranklin-Medium.ttf in Resources */,
 				FC34F8242110D02C00455F8C /* Quicksand-Medium.ttf in Resources */,
 				FCE1530E210582A7008682EB /* Assets.xcassets in Resources */,
 				FC4B7A1F2107C7FB0066D359 /* GoogleService-Info.plist in Resources */,
@@ -279,6 +298,7 @@
 				FCE153092105829A008682EB /* Main.storyboard in Resources */,
 				FC34F8232110D02C00455F8C /* Quicksand-Light.ttf in Resources */,
 				FC34F8252110D02C00455F8C /* Quicksand-Regular.ttf in Resources */,
+				FC3AD7032118B977003F41A3 /* LibreFranklin-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
