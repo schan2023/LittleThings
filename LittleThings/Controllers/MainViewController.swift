@@ -10,22 +10,31 @@ import Foundation
 import UIKit
 import FirebaseAuth
 import FirebaseUI
+import FirebaseDatabase
 
 class MainViewController: UIViewController {
     
-    @IBOutlet weak var addEventButton: UIButton!
     @IBOutlet weak var generateEventButton: UIButton!
-    @IBOutlet weak var activitiesButton: UIButton!
     @IBOutlet weak var favoritesButton: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
+    
+    @IBOutlet weak var customizedButton: UIButton!
+    
+    //Adding event
+    var ref: DatabaseReference!
+    @IBOutlet weak var inputEventTextField: UITextField!
+    @IBOutlet weak var saveButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 //        handleLogin()
-        fixButtons(button: addEventButton)
         fixButtons(button: generateEventButton)
-        fixButtons(button: activitiesButton)
         fixButtons(button: favoritesButton)
+        fixButtons(button: saveButton)
+        
+        customizedButton.layer.borderColor = UIColor.white.cgColor
+        customizedButton.layer.borderWidth = 1.0
+        customizedButton.layer.cornerRadius = 10
     }
     
     func handleLogin() {
@@ -39,6 +48,32 @@ class MainViewController: UIViewController {
     func fixButtons(button: UIButton) {
         button.layer.cornerRadius = 10
         button.clipsToBounds = true
+    }
+    
+    func retrieveInputField() -> String {
+        
+        //Retrieves data from input field
+        let eventDescription = inputEventTextField.text ?? ""
+        inputEventTextField.resignFirstResponder()
+        inputEventTextField.text = ""
+        
+        return eventDescription
+    }
+    
+    @IBAction func saveButtonPressed(_ sender: Any) {
+        
+        let eventDescription = retrieveInputField()
+        if eventDescription == "" {
+            let alertErr = Alerts.createAlert(title: "Cannot save empty event!", message: "Please input event.")
+            self.present(alertErr, animated: true, completion: nil)
+            return
+        }
+        
+        CreateEvent().createEvent(eventDescription: eventDescription)
+        
+        let alert = Alerts.createAlert(title: "Event Saved!", message: "")
+        self.present(alert, animated: true, completion: nil)
+        
     }
     
 }
