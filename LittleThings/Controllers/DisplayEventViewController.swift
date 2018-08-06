@@ -17,6 +17,8 @@ class DisplayEventViewController: UIViewController {
     
     @IBOutlet weak var generateButton: UIButton!
     @IBOutlet weak var goToDayButton: UIButton!
+    @IBOutlet weak var eventDateLabel: UILabel!
+    @IBOutlet weak var designCardsView: UIView!
     
     var arrayOfEvents: [String] = [String]()
     var currentDate: String?
@@ -25,6 +27,7 @@ class DisplayEventViewController: UIViewController {
         super.viewDidLoad()
         fixButtons(button: generateButton)
         fixButtons(button: goToDayButton)
+        formatCards()
         generateEvent(completionHandler: handleArrayOfEventsCompletion)
     }
     
@@ -86,11 +89,18 @@ class DisplayEventViewController: UIViewController {
 
         //Set label as event description
         eventLabel.text = eventsArray[randomInt]
+        eventDateLabel.text = self.currentDate
     }
     
     func fixButtons(button: UIButton) {
         button.layer.cornerRadius = 10
         button.clipsToBounds = true
+    }
+    
+    func formatCards() {
+        designCardsView.layer.cornerRadius = 10
+        designCardsView.layer.shadowOffset = CGSize(width: 0, height: 1)
+        designCardsView.layer.shadowOpacity = Float(0.2)
     }
     
     //Use segue identifier to go to day function

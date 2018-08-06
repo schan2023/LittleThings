@@ -19,14 +19,14 @@
 		FC34F82B2113870900455F8C /* CreateEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC34F82A2113870900455F8C /* CreateEvent.swift */; };
 		FC34F82D2113A5A700455F8C /* DisplayComplimentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC34F82C2113A5A700455F8C /* DisplayComplimentViewController.swift */; };
 		FC34F8342115147C00455F8C /* vector-cloud-png.png in Resources */ = {isa = PBXBuildFile; fileRef = FC34F8332115147C00455F8C /* vector-cloud-png.png */; };
-		FC3AD7032118B977003F41A3 /* LibreFranklin-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC3AD6FE2118B976003F41A3 /* LibreFranklin-Bold.ttf */; };
-		FC3AD7042118B977003F41A3 /* LibreFranklin-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC3AD6FF2118B976003F41A3 /* LibreFranklin-Black.ttf */; };
-		FC3AD7052118B977003F41A3 /* LibreFranklin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC3AD7002118B976003F41A3 /* LibreFranklin-Regular.ttf */; };
-		FC3AD7062118B977003F41A3 /* LibreFranklin-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC3AD7012118B976003F41A3 /* LibreFranklin-Light.ttf */; };
-		FC3AD7072118B977003F41A3 /* LibreFranklin-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC3AD7022118B977003F41A3 /* LibreFranklin-Medium.ttf */; };
+		FC3AD70D2118C309003F41A3 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC3AD7082118C2FE003F41A3 /* Montserrat-Bold.ttf */; };
+		FC3AD70E2118C309003F41A3 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC3AD7092118C300003F41A3 /* Montserrat-SemiBold.ttf */; };
+		FC3AD70F2118C309003F41A3 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC3AD70A2118C303003F41A3 /* Montserrat-Light.ttf */; };
+		FC3AD7102118C309003F41A3 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC3AD70B2118C305003F41A3 /* Montserrat-Medium.ttf */; };
+		FC3AD7112118C309003F41A3 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC3AD70C2118C307003F41A3 /* Montserrat-Regular.ttf */; };
+		FC3AD7132118C55C003F41A3 /* icons8-plus-24 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = FC3AD7122118C55C003F41A3 /* icons8-plus-24 (1).png */; };
 		FC4B7A00210586BD0066D359 /* ActivitiesMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC4B79FF210586BD0066D359 /* ActivitiesMain.storyboard */; };
 		FC4B7A02210587020066D359 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A01210587020066D359 /* MainViewController.swift */; };
-		FC4B7A042105871A0066D359 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A032105871A0066D359 /* CreateEventViewController.swift */; };
 		FC4B7A06210587E90066D359 /* DisplayEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A05210587E90066D359 /* DisplayEventViewController.swift */; };
 		FC4B7A082105956C0066D359 /* EventDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A072105956C0066D359 /* EventDayViewController.swift */; };
 		FC4B7A0A210595840066D359 /* ActivitiesMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A09210595840066D359 /* ActivitiesMainViewController.swift */; };
@@ -56,14 +56,14 @@
 		FC34F82A2113870900455F8C /* CreateEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEvent.swift; sourceTree = "<group>"; };
 		FC34F82C2113A5A700455F8C /* DisplayComplimentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayComplimentViewController.swift; sourceTree = "<group>"; };
 		FC34F8332115147C00455F8C /* vector-cloud-png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vector-cloud-png.png"; sourceTree = "<group>"; };
-		FC3AD6FE2118B976003F41A3 /* LibreFranklin-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-Bold.ttf"; sourceTree = "<group>"; };
-		FC3AD6FF2118B976003F41A3 /* LibreFranklin-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-Black.ttf"; sourceTree = "<group>"; };
-		FC3AD7002118B976003F41A3 /* LibreFranklin-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-Regular.ttf"; sourceTree = "<group>"; };
-		FC3AD7012118B976003F41A3 /* LibreFranklin-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-Light.ttf"; sourceTree = "<group>"; };
-		FC3AD7022118B977003F41A3 /* LibreFranklin-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-Medium.ttf"; sourceTree = "<group>"; };
+		FC3AD7082118C2FE003F41A3 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		FC3AD7092118C300003F41A3 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		FC3AD70A2118C303003F41A3 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		FC3AD70B2118C305003F41A3 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		FC3AD70C2118C307003F41A3 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		FC3AD7122118C55C003F41A3 /* icons8-plus-24 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-plus-24 (1).png"; sourceTree = "<group>"; };
 		FC4B79FF210586BD0066D359 /* ActivitiesMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ActivitiesMain.storyboard; sourceTree = "<group>"; };
 		FC4B7A01210587020066D359 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		FC4B7A032105871A0066D359 /* CreateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
 		FC4B7A05210587E90066D359 /* DisplayEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayEventViewController.swift; sourceTree = "<group>"; };
 		FC4B7A072105956C0066D359 /* EventDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDayViewController.swift; sourceTree = "<group>"; };
 		FC4B7A09210595840066D359 /* ActivitiesMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesMainViewController.swift; sourceTree = "<group>"; };
@@ -112,11 +112,11 @@
 		FC34F81B2110CEB500455F8C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				FC3AD6FF2118B976003F41A3 /* LibreFranklin-Black.ttf */,
-				FC3AD6FE2118B976003F41A3 /* LibreFranklin-Bold.ttf */,
-				FC3AD7012118B976003F41A3 /* LibreFranklin-Light.ttf */,
-				FC3AD7022118B977003F41A3 /* LibreFranklin-Medium.ttf */,
-				FC3AD7002118B976003F41A3 /* LibreFranklin-Regular.ttf */,
+				FC3AD7082118C2FE003F41A3 /* Montserrat-Bold.ttf */,
+				FC3AD70A2118C303003F41A3 /* Montserrat-Light.ttf */,
+				FC3AD70B2118C305003F41A3 /* Montserrat-Medium.ttf */,
+				FC3AD70C2118C307003F41A3 /* Montserrat-Regular.ttf */,
+				FC3AD7092118C300003F41A3 /* Montserrat-SemiBold.ttf */,
 				FC34F81E2110D02300455F8C /* Quicksand-Bold.ttf */,
 				FC34F8212110D02A00455F8C /* Quicksand-Regular.ttf */,
 				FC34F81C2110CEE300455F8C /* LeckerliOne-Regular.ttf */,
@@ -129,6 +129,7 @@
 		FC34F82E2114DBA100455F8C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FC3AD7122118C55C003F41A3 /* icons8-plus-24 (1).png */,
 				FC34F8332115147C00455F8C /* vector-cloud-png.png */,
 			);
 			path = Images;
@@ -148,7 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				FC4B7A01210587020066D359 /* MainViewController.swift */,
-				FC4B7A032105871A0066D359 /* CreateEventViewController.swift */,
 				FC4B7A05210587E90066D359 /* DisplayEventViewController.swift */,
 				FC4B7A072105956C0066D359 /* EventDayViewController.swift */,
 				FC4B7A09210595840066D359 /* ActivitiesMainViewController.swift */,
@@ -283,22 +283,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC3AD7042118B977003F41A3 /* LibreFranklin-Black.ttf in Resources */,
-				FC3AD7052118B977003F41A3 /* LibreFranklin-Regular.ttf in Resources */,
+				FC3AD7112118C309003F41A3 /* Montserrat-Regular.ttf in Resources */,
+				FC3AD70F2118C309003F41A3 /* Montserrat-Light.ttf in Resources */,
+				FC3AD7102118C309003F41A3 /* Montserrat-Medium.ttf in Resources */,
 				FC34F8222110D02C00455F8C /* Quicksand-Bold.ttf in Resources */,
-				FC3AD7062118B977003F41A3 /* LibreFranklin-Light.ttf in Resources */,
 				FCE15311210582A7008682EB /* LaunchScreen.storyboard in Resources */,
-				FC3AD7072118B977003F41A3 /* LibreFranklin-Medium.ttf in Resources */,
+				FC3AD70E2118C309003F41A3 /* Montserrat-SemiBold.ttf in Resources */,
 				FC34F8242110D02C00455F8C /* Quicksand-Medium.ttf in Resources */,
 				FCE1530E210582A7008682EB /* Assets.xcassets in Resources */,
 				FC4B7A1F2107C7FB0066D359 /* GoogleService-Info.plist in Resources */,
 				FC34F8342115147C00455F8C /* vector-cloud-png.png in Resources */,
 				FC34F81D2110CEE400455F8C /* LeckerliOne-Regular.ttf in Resources */,
 				FC4B7A00210586BD0066D359 /* ActivitiesMain.storyboard in Resources */,
+				FC3AD7132118C55C003F41A3 /* icons8-plus-24 (1).png in Resources */,
+				FC3AD70D2118C309003F41A3 /* Montserrat-Bold.ttf in Resources */,
 				FCE153092105829A008682EB /* Main.storyboard in Resources */,
 				FC34F8232110D02C00455F8C /* Quicksand-Light.ttf in Resources */,
 				FC34F8252110D02C00455F8C /* Quicksand-Regular.ttf in Resources */,
-				FC3AD7032118B977003F41A3 /* LibreFranklin-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,7 +427,6 @@
 				FC4B7A1D21068A6E0066D359 /* Alerts.swift in Sources */,
 				FC4B7A1B21064E430066D359 /* CoreDataHelper.swift in Sources */,
 				FC4B7A082105956C0066D359 /* EventDayViewController.swift in Sources */,
-				FC4B7A042105871A0066D359 /* CreateEventViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
