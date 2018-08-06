@@ -26,9 +26,6 @@
         <array key="Montserrat-SemiBold.ttf">
             <string>Montserrat-SemiBold</string>
         </array>
-        <array key="Quicksand-Bold.ttf">
-            <string>Quicksand-Bold</string>
-        </array>
         <array key="Quicksand-Regular.ttf">
             <string>Quicksand-Regular</string>
         </array>
@@ -285,7 +282,7 @@
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="vDX-Ri-vxj"/>
                                             <constraint firstAttribute="height" constant="45" id="xsB-z3-B08"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
                                         <state key="normal" title="Add">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -301,7 +298,7 @@
                                             <constraint firstAttribute="height" constant="45" id="0Zh-lb-gN9"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="EBL-Q6-uKP"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
                                         <state key="normal" title="Home">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -407,7 +404,7 @@
                                     <constraint firstAttribute="height" constant="45" id="Nv1-Xb-xQd"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="Xqk-Ri-Rsx"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="21"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
                                 <state key="normal" title="Home">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -471,7 +468,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="cxI-0w-W4t"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="19"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Generate"/>
                                         <connections>
@@ -484,7 +481,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="WfU-05-Gv8"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="19"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Go To Day"/>
                                         <connections>
@@ -620,7 +617,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="i4l-zy-nYO"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="21"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
                                         <state key="normal" title="Home">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -634,7 +631,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="4xK-4y-OOq"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="21"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
                                         <state key="normal" title="Fave">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -705,10 +702,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dose of Positivity" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPr-f7-xIM">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="383"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="343"/>
                                 <color key="backgroundColor" red="0.49019607840000001" green="0.70196078429999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="383" id="Eei-Hx-up8"/>
+                                    <constraint firstAttribute="height" constant="343" id="Eei-Hx-up8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="LeckerliOne-Regular" family="Leckerli One" pointSize="60"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -719,7 +716,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="B4i-Su-UNP">
-                                <rect key="frame" x="82" y="437" width="250" height="215"/>
+                                <rect key="frame" x="82" y="397" width="250" height="215"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q4D-fQ-2z1">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="45"/>
@@ -729,10 +726,13 @@
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="KBx-fI-wH8"/>
                                             <constraint firstAttribute="height" constant="45" id="fbK-bG-gk5"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="18"/>
                                         <state key="normal" title="Advice">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="XVK-5W-uIQ" kind="show" id="Q0H-oA-Luh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msH-DJ-mfN">
                                         <rect key="frame" x="0.0" y="85" width="250" height="45"/>
@@ -742,7 +742,7 @@
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="avd-bD-WPp"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="bF2-0v-fPW"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="18"/>
                                         <state key="normal" title="Acts of Kindness">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -758,8 +758,8 @@
                                             <constraint firstAttribute="height" constant="45" id="Je6-GD-j0c"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Su3-RW-sqC"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="17"/>
-                                        <state key="normal" title="Compliment">
+                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="18"/>
+                                        <state key="normal" title="Compliments">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
@@ -779,12 +779,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="B4i-Su-UNP" firstAttribute="top" secondItem="UPr-f7-xIM" secondAttribute="bottom" constant="54" id="2Nq-gC-Txh"/>
                             <constraint firstItem="B4i-Su-UNP" firstAttribute="centerX" secondItem="VoJ-yh-jgL" secondAttribute="centerX" id="3Zb-fd-KNM"/>
                             <constraint firstItem="UPr-f7-xIM" firstAttribute="leading" secondItem="Lvl-lj-KPZ" secondAttribute="leading" id="4zv-vs-GPk"/>
                             <constraint firstItem="UPr-f7-xIM" firstAttribute="top" secondItem="Lvl-lj-KPZ" secondAttribute="top" constant="-64" id="8uo-Qy-LbK"/>
                             <constraint firstItem="B4i-Su-UNP" firstAttribute="centerX" secondItem="VoJ-yh-jgL" secondAttribute="centerX" id="DDk-t1-oTR"/>
-                            <constraint firstItem="Lvl-lj-KPZ" firstAttribute="bottom" secondItem="B4i-Su-UNP" secondAttribute="bottom" constant="84" id="FsV-ZE-rx3"/>
+                            <constraint firstItem="Lvl-lj-KPZ" firstAttribute="bottom" secondItem="B4i-Su-UNP" secondAttribute="bottom" constant="124" id="FsV-ZE-rx3"/>
+                            <constraint firstItem="B4i-Su-UNP" firstAttribute="top" secondItem="UPr-f7-xIM" secondAttribute="bottom" constant="54" id="KBy-Fw-eaz"/>
                             <constraint firstItem="Lvl-lj-KPZ" firstAttribute="trailing" secondItem="B4i-Su-UNP" secondAttribute="trailing" constant="82" id="aHX-M6-Iek"/>
                             <constraint firstItem="Lvl-lj-KPZ" firstAttribute="trailing" secondItem="UPr-f7-xIM" secondAttribute="trailing" id="wcC-KV-nzp"/>
                             <constraint firstItem="B4i-Su-UNP" firstAttribute="leading" secondItem="Lvl-lj-KPZ" secondAttribute="leading" constant="82" id="yHy-ab-IGp"/>
@@ -799,7 +799,126 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UPP-yo-ier" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="521" y="873"/>
+            <point key="canvasLocation" x="520.28985507246375" y="872.28260869565224"/>
+        </scene>
+        <!--Display Advice View Controller-->
+        <scene sceneID="vHL-Mk-tib">
+            <objects>
+                <viewController id="XVK-5W-uIQ" customClass="DisplayAdviceViewController" customModule="LittleThings" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mh7-lL-hil">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Advice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbh-Ct-lYr">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="309"/>
+                                <color key="backgroundColor" red="0.49019607840000001" green="0.70196078429999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="LeckerliOne-Regular" family="Leckerli One" pointSize="60"/>
+                                <color key="textColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vector-cloud-png.png" translatesAutoresizingMaskIntoConstraints="NO" id="54Q-UP-g9a">
+                                <rect key="frame" x="37" y="141" width="47" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="47" id="dJJ-iJ-PJ6"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fF4-gP-TjT">
+                                <rect key="frame" x="20" y="327" width="374" height="238"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BnT-5B-0BO">
+                                        <rect key="frame" x="20" y="8" width="334" height="222"/>
+                                        <color key="backgroundColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                        <color key="textColor" red="0.4039215686" green="0.39607843139999999" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="BnT-5B-0BO" secondAttribute="bottom" constant="8" id="AmQ-Sh-uAE"/>
+                                    <constraint firstItem="BnT-5B-0BO" firstAttribute="leading" secondItem="fF4-gP-TjT" secondAttribute="leading" constant="20" id="NyK-P3-46o"/>
+                                    <constraint firstAttribute="trailing" secondItem="BnT-5B-0BO" secondAttribute="trailing" constant="20" id="V7V-sR-3Tk"/>
+                                    <constraint firstItem="BnT-5B-0BO" firstAttribute="top" secondItem="fF4-gP-TjT" secondAttribute="top" constant="8" id="aYw-nQ-adM"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="ahb-O3-s7e">
+                                <rect key="frame" x="37" y="603" width="340" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6I-R8-pLx">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="45"/>
+                                        <color key="backgroundColor" red="0.4431372549" green="0.63137254899999995" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="yJK-mw-xLH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
+                                        <state key="normal" title="Add">
+                                            <color key="titleColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.4039215686" green="0.39607843139999999" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addButtonPressed:" destination="XVK-5W-uIQ" eventType="touchUpInside" id="ayh-Hh-Bl3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXf-yr-IcH">
+                                        <rect key="frame" x="220" y="0.0" width="120" height="45"/>
+                                        <color key="backgroundColor" red="0.4431372549" green="0.63137254899999995" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="pRP-TH-xb3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
+                                        <state key="normal" title="Home">
+                                            <color key="titleColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.4039215686" green="0.39607843139999999" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="homeButtonPressed:" destination="XVK-5W-uIQ" eventType="touchUpInside" id="LYE-0G-Qfw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="tNb-tc-sYr"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vector-cloud-png.png" translatesAutoresizingMaskIntoConstraints="NO" id="VBX-YE-7hO">
+                                <rect key="frame" x="330" y="141" width="47" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="47" id="w4L-n9-R29"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fF4-gP-TjT" firstAttribute="top" secondItem="dbh-Ct-lYr" secondAttribute="bottom" constant="18" id="0Lo-Fb-f5G"/>
+                            <constraint firstItem="fF4-gP-TjT" firstAttribute="centerX" secondItem="ahb-O3-s7e" secondAttribute="centerX" id="0Zf-ZB-HOh"/>
+                            <constraint firstItem="dbh-Ct-lYr" firstAttribute="centerX" secondItem="fF4-gP-TjT" secondAttribute="centerX" id="3Uf-7J-G5i"/>
+                            <constraint firstItem="ahb-O3-s7e" firstAttribute="leading" secondItem="8mk-LJ-n5Z" secondAttribute="leading" constant="37" id="76p-Ws-p2t"/>
+                            <constraint firstItem="fF4-gP-TjT" firstAttribute="leading" secondItem="8mk-LJ-n5Z" secondAttribute="leading" constant="20" id="802-BK-7xb"/>
+                            <constraint firstItem="VBX-YE-7hO" firstAttribute="top" secondItem="8mk-LJ-n5Z" secondAttribute="top" constant="77" id="8k5-cy-7Fu"/>
+                            <constraint firstItem="VBX-YE-7hO" firstAttribute="top" secondItem="54Q-UP-g9a" secondAttribute="top" id="B4m-Iw-NTO"/>
+                            <constraint firstItem="8mk-LJ-n5Z" firstAttribute="bottom" secondItem="ahb-O3-s7e" secondAttribute="bottom" constant="88" id="ECd-RY-jnT"/>
+                            <constraint firstItem="VBX-YE-7hO" firstAttribute="trailing" secondItem="ahb-O3-s7e" secondAttribute="trailing" id="Eks-V6-LCQ"/>
+                            <constraint firstItem="dbh-Ct-lYr" firstAttribute="leading" secondItem="Mh7-lL-hil" secondAttribute="leading" id="GZr-B3-ync"/>
+                            <constraint firstItem="dbh-Ct-lYr" firstAttribute="top" secondItem="Mh7-lL-hil" secondAttribute="top" id="HEI-Bd-KIf"/>
+                            <constraint firstItem="54Q-UP-g9a" firstAttribute="leading" secondItem="ahb-O3-s7e" secondAttribute="leading" id="IxW-0R-Sh6"/>
+                            <constraint firstItem="fF4-gP-TjT" firstAttribute="centerX" secondItem="Mh7-lL-hil" secondAttribute="centerX" id="M24-3c-1FP"/>
+                            <constraint firstItem="VBX-YE-7hO" firstAttribute="centerY" secondItem="dbh-Ct-lYr" secondAttribute="centerY" id="MII-hb-wl6"/>
+                            <constraint firstItem="fF4-gP-TjT" firstAttribute="top" secondItem="Mh7-lL-hil" secondAttribute="top" constant="327" id="PQH-U0-xLv"/>
+                            <constraint firstItem="ahb-O3-s7e" firstAttribute="top" secondItem="fF4-gP-TjT" secondAttribute="bottom" constant="38" id="QC9-p6-TBn"/>
+                            <constraint firstItem="8mk-LJ-n5Z" firstAttribute="trailing" secondItem="ahb-O3-s7e" secondAttribute="trailing" constant="37" id="RqK-uw-XxI"/>
+                            <constraint firstItem="VBX-YE-7hO" firstAttribute="bottom" secondItem="54Q-UP-g9a" secondAttribute="bottom" id="ldf-4v-Plw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8mk-LJ-n5Z"/>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="f6I-R8-pLx" id="QU0-6p-Dmj"/>
+                        <outlet property="adviceLabel" destination="BnT-5B-0BO" id="NqC-q4-XcS"/>
+                        <outlet property="designCardView" destination="fF4-gP-TjT" id="8KP-LW-obR"/>
+                        <outlet property="homeButton" destination="XXf-yr-IcH" id="jKp-rY-uwU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OFz-dZ-E6X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-191.30434782608697" y="1603.5326086956522"/>
         </scene>
         <!--Display Act Of Kindness View Controller-->
         <scene sceneID="h8E-sP-hTZ">
@@ -841,7 +960,7 @@
                                             <constraint firstAttribute="height" constant="45" id="AtE-Lw-llw"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="L61-aM-Kfr"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
                                         <state key="normal" title="Add">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -856,7 +975,7 @@
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="Eoe-5D-kbx"/>
                                             <constraint firstAttribute="height" constant="45" id="fMW-rt-wJm"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
                                         <state key="normal" title="Home">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
