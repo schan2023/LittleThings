@@ -50,7 +50,7 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="eXW-Lr-PQP"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="19"/>
-                                                <state key="normal" title="Positivity">
+                                                <state key="normal" title="Reflect on the Positives">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
@@ -144,7 +144,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What made you smile today?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tm3-tR-laN">
-                                        <rect key="frame" x="73" y="202" width="268.33333333333326" height="22"/>
+                                        <rect key="frame" x="73" y="202" width="268.33333333333331" height="22"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
                                         <color key="textColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>

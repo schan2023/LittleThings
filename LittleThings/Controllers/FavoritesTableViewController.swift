@@ -28,9 +28,11 @@ class FavoritesTableViewController: UITableViewController {
         let ref = Database.database().reference()
         let user = Auth.auth().currentUser
         ref.child("users").child((user?.uid)!).child("Favorites").observeSingleEvent(of: .value, with: { (snapshot) in
-            let snapDict = snapshot.value as! NSDictionary
-            for (_, value) in snapDict as! [String : String] {
-                self.favoriteDates.append(value)
+            if snapshot.exists() {
+                let snapDict = snapshot.value as! NSDictionary
+                for (_, value) in snapDict as! [String : String] {
+                    self.favoriteDates.append(value)
+                }
             }
         completionHandler(self.favoriteDates)
         })

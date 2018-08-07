@@ -16,6 +16,8 @@ class EventDayViewController: UIViewController {
     var currentEventsDay: [String]?
     var currentEventDate: String?
     
+    var found: Bool = true
+    
     @IBOutlet weak var eventDateLabel: UILabel!
     @IBOutlet weak var eventsDayDisplayLabel: UILabel!
     
@@ -46,30 +48,18 @@ class EventDayViewController: UIViewController {
     @IBAction func faveButtonPressed(_ sender: Any) {
         let ref = Database.database().reference()
         let user = Auth.auth().currentUser
-        ref.child("users").child((user?.uid)!).child("Favorites").observeSingleEvent(of: .value, with: { (snapshot) in
-            if(snapshot.exists()) {
-                let snapDict = snapshot.value as! NSDictionary
-                print(snapDict)
-                print(self.currentEventDate)
-                //check for duplicates
-                for(_, value) in snapDict as! [String: String] {
-                    if value == self.currentEventDate {
-                        print("This already exists!")
-                    }
-                    else {
-                        ref.child("users").child((user?.uid)!).child("Favorites").childByAutoId().setValue(self.currentEventDate)
-                        print("Added new date")
-                    }
-                }
+        self.checkIfFavoriteAlreadyExists(currentDate: currentEventDate!) { isExist in
+            if isExist {
+                let alert = Alerts.createAlert(title: "Event already favorited!", message: "")
+                self.present(alert, animated: true, completion: nil)
+                return
             }
             else {
-                print("snapshot does not exist")
                 ref.child("users").child((user?.uid)!).child("Favorites").childByAutoId().setValue(self.currentEventDate)
+                let alert = Alerts.createAlert(title: "Event Favorited!", message: "")
+                self.present(alert, animated: true, completion: nil)
             }
-        })
-        
-        let alert = Alerts.createAlert(title: "Event Favorited!", message: "")
-        self.present(alert, animated: true, completion: nil)
+        }
     }
     
     func fixButtons(button: UIButton) {
@@ -77,4 +67,23 @@ class EventDayViewController: UIViewController {
         button.clipsToBounds = true
     }
     
+    func checkIfFavoriteAlreadyExists(currentDate: String, completionHandler: @escaping(Bool) -> Void) {
+        let ref = Database.database().reference()
+        let user = Auth.auth().currentUser
+        ref.child("users").child((user?.uid)!).child("Favorites").observeSingleEvent(of: .value, with: { (snapshot) in
+            if snapshot.exists() {
+                let snapDict = snapshot.value as! NSDictionary
+                for (_, value) in snapDict as! [String : String] {
+                    if currentDate == value {
+                        completionHandler(true)
+                        return
+                    }
+                }
+                completionHandler(false)
+            }
+            else {
+                completionHandler(false)
+            }
+        })
+    }
 }
