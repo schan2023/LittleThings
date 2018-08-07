@@ -19,6 +19,7 @@ class DisplayEventViewController: UIViewController {
     @IBOutlet weak var goToDayButton: UIButton!
     @IBOutlet weak var eventDateLabel: UILabel!
     @IBOutlet weak var designCardsView: UIView!
+    @IBOutlet weak var reflectTitleView: UIView!
     
     var arrayOfEvents: [String] = [String]()
     var currentDate: String?
@@ -28,6 +29,9 @@ class DisplayEventViewController: UIViewController {
         fixButtons(button: generateButton)
         fixButtons(button: goToDayButton)
         formatCards()
+        reflectTitleView.layer.cornerRadius = 15
+        reflectTitleView.layer.shadowOffset = CGSize(width: 0, height: 1)
+        reflectTitleView.layer.shadowOpacity = Float(0.2)
         generateEvent(completionHandler: handleArrayOfEventsCompletion)
     }
     
