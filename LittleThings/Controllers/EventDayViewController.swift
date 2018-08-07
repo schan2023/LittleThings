@@ -17,7 +17,7 @@ class EventDayViewController: UIViewController {
     var currentEventDate: String?
     var currentFavorites = [String]()
     
-    //1) boolean to check for duplicates
+    var found: Bool = true
     
     @IBOutlet weak var eventDateLabel: UILabel!
     @IBOutlet weak var eventsDayDisplayLabel: UILabel!
@@ -47,10 +47,40 @@ class EventDayViewController: UIViewController {
     }
     
     @IBAction func faveButtonPressed(_ sender: Any) {
-        retrieveFavoritesDates(completionHandler: handleRetrieveFavorites, currentFavedDate: currentEventDate!)
+        print("fave button pressed")
         let ref = Database.database().reference()
         let user = Auth.auth().currentUser
-        
+        self.checkIfFavoriteAlreadyExists(currentDate: currentEventDate!) { isExist in
+            if isExist {
+                print("date already exists")
+                let alert = Alerts.createAlert(title: "Event already favorited!", message: "")
+                self.present(alert, animated: true, completion: nil)
+                return
+            }
+            else {
+                print("date does not exist")
+                ref.child("users").child((user?.uid)!).child("Favorites").childByAutoId().setValue(self.currentEventDate)
+                print("Added new date")
+                let alert = Alerts.createAlert(title: "Event Favorited!", message: "")
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
+//        retrieveFavoritesDates(completionHandler: handleRetrieveFavorites, currentFavedDate: currentEventDate!)
+//        let ref = Database.database().reference()
+//        let user = Auth.auth().currentUser
+//
+//        print("this is inside found \(found)")
+//        if found{
+//            let alert = Alerts.createAlert(title: "Event already favorited!", message: "")
+//            self.present(alert, animated: true, completion: nil)
+//            return
+//        }
+//        else {
+//            ref.child("users").child((user?.uid)!).child("Favorites").childByAutoId().setValue(self.currentEventDate)
+//            print("Added new date")
+//            let alert = Alerts.createAlert(title: "Event Favorited!", message: "")
+//            self.present(alert, animated: true, completion: nil)
+//        }
 //        ref.child("users").child((user?.uid)!).child("Favorites").observeSingleEvent(of: .value, with: { (snapshot) in
 //            if(snapshot.exists()) {
 //                let snapDict = snapshot.value as! NSDictionary
@@ -73,8 +103,6 @@ class EventDayViewController: UIViewController {
 //            }
 //        })
         
-        let alert = Alerts.createAlert(title: "Event Favorited!", message: "")
-        self.present(alert, animated: true, completion: nil)
     }
     
     func fixButtons(button: UIButton) {
@@ -82,32 +110,61 @@ class EventDayViewController: UIViewController {
         button.clipsToBounds = true
     }
     
-    func retrieveFavoritesDates(completionHandler: @escaping ([String], String) -> Bool, currentFavedDate: String) {
+//    func retrieveFavoritesDates(completionHandler: @escaping ([String], String, Bool) -> Void, currentFavedDate: String) {
+//        print("inside retrieve favorite dates")
+//        let ref = Database.database().reference()
+//        let user = Auth.auth().currentUser
+//        ref.child("users").child((user?.uid)!).child("Favorites").observeSingleEvent(of: .value, with: { (snapshot) in
+//            if snapshot.exists() {
+//                print("snapshot exists")
+//                let snapDict = snapshot.value as! NSDictionary
+//                for (_, value) in snapDict as! [String : String] {
+//                    self.currentFavorites.append(value)
+//                }
+//            }
+//            else {
+//                print("snapshot does not exist, found = false")
+//                self.found = false
+//            }
+//            completionHandler(self.currentFavorites, self.currentEventDate!, self.found)
+//        })
+//    }
+//
+//    func handleRetrieveFavorites(dates: [String], currentFavedDate: String, found: Bool) -> Void {
+//        print("inside handle retrieve favorites")
+//        print(currentFavedDate)
+//        print(found)
+//
+//        for date in dates {
+//            if currentFavedDate == date {
+//                print("This date already exists")
+//                self.found = false
+//            }
+//        }
+//    }
+    
+    func checkIfFavoriteAlreadyExists(currentDate: String, completionHandler: @escaping(Bool) -> Void) {
         let ref = Database.database().reference()
         let user = Auth.auth().currentUser
         ref.child("users").child((user?.uid)!).child("Favorites").observeSingleEvent(of: .value, with: { (snapshot) in
-            let snapDict = snapshot.value as! NSDictionary
-            for (_, value) in snapDict as! [String : String] {
-                self.currentFavorites.append(value)
+            if snapshot.exists() {
+                print("snapshot exists")
+                let snapDict = snapshot.value as! NSDictionary
+                for (_, value) in snapDict as! [String : String] {
+                    if currentDate == value {
+                        print("\(currentDate) date found in favorites")
+                        completionHandler(true)
+                        return
+                    }
+                }
+                print("date not found in favorites")
+                completionHandler(false)
             }
-            completionHandler(self.currentFavorites, self.currentEventDate!)
+            else {
+                print("snapshot does not exist, completion handler returns false")
+                completionHandler(false)
+            }
         })
-    }
-    
-    func handleRetrieveFavorites(dates: [String], currentFavedDate: String) -> Bool {
-        print("inside handle retrieve favorites")
-        print(currentFavedDate)
-        
-        //2) set boolean value
-        
-        for date in dates {
-            if currentFavedDate == date {
-                print("This date already exists")
-                return false
-            }
-        }
-       print("This date does not exist")
-        return true
     }
     
 }
