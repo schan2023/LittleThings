@@ -26,6 +26,7 @@
 		FC3AD7112118C309003F41A3 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC3AD70C2118C307003F41A3 /* Montserrat-Regular.ttf */; };
 		FC3AD7132118C55C003F41A3 /* icons8-plus-24 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = FC3AD7122118C55C003F41A3 /* icons8-plus-24 (1).png */; };
 		FC3AD7152118FFD7003F41A3 /* DisplayAdviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3AD7142118FFD7003F41A3 /* DisplayAdviceViewController.swift */; };
+		FC3AD717211A31A0003F41A3 /* DisplayEventDayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3AD716211A31A0003F41A3 /* DisplayEventDayCollectionViewCell.swift */; };
 		FC4B7A00210586BD0066D359 /* ActivitiesMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC4B79FF210586BD0066D359 /* ActivitiesMain.storyboard */; };
 		FC4B7A02210587020066D359 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A01210587020066D359 /* MainViewController.swift */; };
 		FC4B7A06210587E90066D359 /* DisplayEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A05210587E90066D359 /* DisplayEventViewController.swift */; };
@@ -64,6 +65,7 @@
 		FC3AD70C2118C307003F41A3 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		FC3AD7122118C55C003F41A3 /* icons8-plus-24 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-plus-24 (1).png"; sourceTree = "<group>"; };
 		FC3AD7142118FFD7003F41A3 /* DisplayAdviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayAdviceViewController.swift; sourceTree = "<group>"; };
+		FC3AD716211A31A0003F41A3 /* DisplayEventDayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayEventDayCollectionViewCell.swift; sourceTree = "<group>"; };
 		FC4B79FF210586BD0066D359 /* ActivitiesMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ActivitiesMain.storyboard; sourceTree = "<group>"; };
 		FC4B7A01210587020066D359 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FC4B7A05210587E90066D359 /* DisplayEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayEventViewController.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				FC4B7A17210597630066D359 /* ListFavoritesTableViewCell.swift */,
+				FC3AD716211A31A0003F41A3 /* DisplayEventDayCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 				FC4B7A1D21068A6E0066D359 /* Alerts.swift in Sources */,
 				FC4B7A1B21064E430066D359 /* CoreDataHelper.swift in Sources */,
 				FC4B7A082105956C0066D359 /* EventDayViewController.swift in Sources */,
+				FC3AD717211A31A0003F41A3 /* DisplayEventDayCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

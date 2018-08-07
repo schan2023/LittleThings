@@ -17,13 +17,15 @@ class DisplayFavoritedDayViewController: UIViewController {
     var favoritedEventsArray: [String] = [String]()
     
     @IBOutlet weak var favoritedEventDateLabel: UILabel!
-    @IBOutlet weak var favoritedEventsDayDisplayLabel: UILabel!
-    
+    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var homeBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         retrieveFavoritedEvent(completionHandler: handleFavoritesArrayCompletion)
+        let layout = collectionView!.collectionViewLayout as! UICollectionViewFlowLayout
+        layout.scrollDirection = .horizontal
+        collectionView?.dataSource = self
         homeBtn.layer.cornerRadius = 10
         homeBtn.clipsToBounds = true
     }
@@ -43,13 +45,33 @@ class DisplayFavoritedDayViewController: UIViewController {
     }
 
     func handleFavoritesArrayCompletion(favoritesArray: [String]) -> Void {
-        let favoriteEventsString = favoritesArray.joined(separator: ", ")
         favoritedEventDateLabel.text = date
-        favoritedEventsDayDisplayLabel.text = favoriteEventsString
+        favoritedEventsArray = favoritesArray
     }
     
     @IBAction func homeButtonPressed(_ sender: Any) {
         self.navigationController?.popToRootViewController(animated: true)
     }
     
+}
+
+extension DisplayFavoritedDayViewController: UICollectionViewDataSource {
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        print(favoritedEventsArray.count)
+//        return favoritedEventsArray.count
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier:  "displayEventCell", for: indexPath) as! DisplayEventDayCollectionViewCell
+//        cell.eventDescriptionLabel.text = favoritedEventsArray[indexPath.item]
+        cell.eventDescriptionLabel.text = "events"
+        
+        return cell
+    }
 }

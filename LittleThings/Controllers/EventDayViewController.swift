@@ -16,26 +16,22 @@ class EventDayViewController: UIViewController {
     var currentEventsDay: [String]?
     var currentEventDate: String?
     
-    var found: Bool = true
-    
     @IBOutlet weak var eventDateLabel: UILabel!
-    @IBOutlet weak var eventsDayDisplayLabel: UILabel!
-    
+    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var faveBtn: UIButton!
     @IBOutlet weak var homeBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let layout = collectionView!.collectionViewLayout as! UICollectionViewFlowLayout
+        layout.scrollDirection = .horizontal
+        collectionView?.dataSource = self
     }
     
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        let eventString = currentEventsDay?.joined(separator: ", ")
         eventDateLabel.text = currentEventDate
-        eventsDayDisplayLabel.text = eventString
-        
         fixButtons(button: faveBtn)
         fixButtons(button: homeBtn)
         
@@ -85,5 +81,23 @@ class EventDayViewController: UIViewController {
                 completionHandler(false)
             }
         })
+    }
+}
+
+extension EventDayViewController: UICollectionViewDataSource {
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return currentEventsDay!.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier:  "displayEventCell", for: indexPath) as! DisplayEventDayCollectionViewCell
+        cell.eventDescriptionLabel.text = currentEventsDay![indexPath.item]
+        
+        return cell
     }
 }
