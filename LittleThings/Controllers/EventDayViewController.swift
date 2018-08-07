@@ -15,7 +15,6 @@ class EventDayViewController: UIViewController {
     
     var currentEventsDay: [String]?
     var currentEventDate: String?
-    var currentFavorites = [String]()
     
     var found: Bool = true
     
