@@ -93,8 +93,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jj3-4V-M5I">
                                 <rect key="frame" x="15" y="30" width="384" height="420"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vector-cloud-png.png" translatesAutoresizingMaskIntoConstraints="NO" id="076-Sj-90L">
-                                        <rect key="frame" x="204" y="58" width="57" height="32"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud vector.png" translatesAutoresizingMaskIntoConstraints="NO" id="076-Sj-90L">
+                                        <rect key="frame" x="204" y="58" width="54" height="29"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bdF-fo-hHO">
@@ -128,7 +128,7 @@
                                             <segue destination="e1D-In-UVV" kind="show" id="qWw-g8-Jip"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vector-cloud-png.png" translatesAutoresizingMaskIntoConstraints="NO" id="980-pp-gLp">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud vector.png" translatesAutoresizingMaskIntoConstraints="NO" id="980-pp-gLp">
                                         <rect key="frame" x="117" y="72" width="95" height="38"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -213,7 +213,7 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5R1-y3-byK">
                                             <rect key="frame" x="20" y="11" width="374" height="108"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yta-OJ-4YG">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yta-OJ-4YG">
                                                     <rect key="frame" x="10" y="20" width="354" height="68"/>
                                                     <fontDescription key="fontDescription" name="CabinCondensed-Bold" family="Cabin Condensed" pointSize="42"/>
                                                     <color key="textColor" red="0.96862745100000003" green="0.97647058819999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -307,7 +307,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="191" id="Lz7-iI-bT2"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
                                         <color key="textColor" red="0.4039215686" green="0.39607843139999999" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -323,11 +323,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zyw-w3-ecK">
                                 <rect key="frame" x="15" y="58" width="384" height="247"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vector-cloud-png.png" translatesAutoresizingMaskIntoConstraints="NO" id="ovB-Y2-mEN">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud vector.png" translatesAutoresizingMaskIntoConstraints="NO" id="ovB-Y2-mEN">
                                         <rect key="frame" x="15" y="106" width="42" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vector-cloud-png.png" translatesAutoresizingMaskIntoConstraints="NO" id="OTx-oV-Wjj">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud vector.png" translatesAutoresizingMaskIntoConstraints="NO" id="OTx-oV-Wjj">
                                         <rect key="frame" x="330" y="106" width="42" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -420,9 +420,9 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N7O-R0-0HS">
                                                     <rect key="frame" x="10" y="10" width="330" height="312"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ze9-MF-kGD">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ze9-MF-kGD">
                                                             <rect key="frame" x="10" y="20" width="310" height="272"/>
-                                                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
                                                             <color key="textColor" white="0.32839330700000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -455,7 +455,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxn-jq-Ep3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxn-jq-Ep3">
                                 <rect key="frame" x="20" y="49" width="377" height="121"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="121" id="n8p-VB-L8h"/>
@@ -541,7 +541,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Nx-nx-97a">
                                 <rect key="frame" x="20" y="333" width="374" height="199"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="eventssss" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="17" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYm-G3-MPD">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="17" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYm-G3-MPD">
                                         <rect key="frame" x="30" y="4" width="314" height="191"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="191" id="msu-2H-z8e"/>
@@ -562,13 +562,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2aH-33-ndy">
                                 <rect key="frame" x="15" y="58" width="384" height="247"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vector-cloud-png.png" translatesAutoresizingMaskIntoConstraints="NO" id="l38-BA-o7e">
-                                        <rect key="frame" x="196" y="28" width="42" height="25"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="42" id="Gpc-JU-eCE"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="07-23-2018" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O01-Lh-MZJ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O01-Lh-MZJ">
                                         <rect key="frame" x="26" y="120" width="332" height="119"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="119" id="nAs-Yr-eSN"/>
@@ -586,10 +580,16 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vector-cloud-png.png" translatesAutoresizingMaskIntoConstraints="NO" id="GHR-sn-nxs">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud vector.png" translatesAutoresizingMaskIntoConstraints="NO" id="GHR-sn-nxs">
                                         <rect key="frame" x="146" y="19" width="55" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="55" id="F8G-xx-fId"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud vector.png" translatesAutoresizingMaskIntoConstraints="NO" id="l38-BA-o7e">
+                                        <rect key="frame" x="205" y="28" width="42" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="42" id="Gpc-JU-eCE"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
@@ -607,7 +607,7 @@
                                     <constraint firstAttribute="bottom" secondItem="jZJ-Le-xot" secondAttribute="bottom" constant="75" id="hCq-uf-9f5"/>
                                     <constraint firstItem="O01-Lh-MZJ" firstAttribute="bottom" secondItem="jZJ-Le-xot" secondAttribute="bottom" constant="67" id="iPT-BS-isN"/>
                                     <constraint firstAttribute="centerX" secondItem="GHR-sn-nxs" secondAttribute="centerX" constant="18.5" id="uu9-wi-aXh"/>
-                                    <constraint firstAttribute="trailing" secondItem="l38-BA-o7e" secondAttribute="trailing" constant="146" id="xxT-FP-mag"/>
+                                    <constraint firstAttribute="trailing" secondItem="l38-BA-o7e" secondAttribute="trailing" constant="137" id="xxT-FP-mag"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -738,7 +738,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08-03-2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qix-7W-frf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qix-7W-frf">
                                 <rect key="frame" x="20" y="49" width="377" height="121"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="121" id="I2T-tG-tn9"/>
@@ -854,11 +854,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="imS-5s-EeH">
                                 <rect key="frame" x="15" y="64" width="384" height="300"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vector-cloud-png.png" translatesAutoresizingMaskIntoConstraints="NO" id="XbR-Ls-A1j">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud vector.png" translatesAutoresizingMaskIntoConstraints="NO" id="XbR-Ls-A1j">
                                         <rect key="frame" x="20" y="136" width="47" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vector-cloud-png.png" translatesAutoresizingMaskIntoConstraints="NO" id="XcP-3i-vRf">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud vector.png" translatesAutoresizingMaskIntoConstraints="NO" id="XcP-3i-vRf">
                                         <rect key="frame" x="320" y="136" width="47" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -919,7 +919,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BnT-5B-0BO">
                                         <rect key="frame" x="30" y="4" width="314" height="191"/>
-                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
                                         <color key="textColor" red="0.4039215686" green="0.39607843139999999" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -980,15 +980,15 @@
                                         <color key="textColor" red="0.96862745100000003" green="0.97647058819999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vector-cloud-png.png" translatesAutoresizingMaskIntoConstraints="NO" id="VBX-YE-7hO">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud vector.png" translatesAutoresizingMaskIntoConstraints="NO" id="VBX-YE-7hO">
                                         <rect key="frame" x="15" y="106" width="47" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="IFd-lg-KeD"/>
                                             <constraint firstAttribute="width" constant="47" id="w4L-n9-R29"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vector-cloud-png.png" translatesAutoresizingMaskIntoConstraints="NO" id="54Q-UP-g9a">
-                                        <rect key="frame" x="330" y="106" width="47" height="25"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud vector.png" translatesAutoresizingMaskIntoConstraints="NO" id="54Q-UP-g9a">
+                                        <rect key="frame" x="320" y="106" width="47" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="47" id="dJJ-iJ-PJ6"/>
                                         </constraints>
@@ -996,7 +996,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.56078431370000004" green="0.75686274509999996" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="54Q-UP-g9a" secondAttribute="trailing" constant="7" id="6eG-Jk-az1"/>
+                                    <constraint firstAttribute="trailing" secondItem="54Q-UP-g9a" secondAttribute="trailing" constant="17" id="6eG-Jk-az1"/>
                                     <constraint firstItem="VBX-YE-7hO" firstAttribute="top" secondItem="tyd-pU-QLE" secondAttribute="top" constant="106" id="D7r-9G-vCK"/>
                                     <constraint firstItem="VBX-YE-7hO" firstAttribute="top" secondItem="54Q-UP-g9a" secondAttribute="top" id="X5b-P8-TuB"/>
                                     <constraint firstItem="VBX-YE-7hO" firstAttribute="leading" secondItem="tyd-pU-QLE" secondAttribute="leading" constant="15" id="Y9x-40-fGl"/>
@@ -1084,7 +1084,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="191" id="bGc-5s-YJT"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
                                         <color key="textColor" red="0.4039215686" green="0.39607843139999999" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1100,14 +1100,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a7L-eE-nLr">
                                 <rect key="frame" x="15" y="58" width="384" height="247"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vector-cloud-png.png" translatesAutoresizingMaskIntoConstraints="NO" id="RDF-vJ-GV4">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud vector.png" translatesAutoresizingMaskIntoConstraints="NO" id="RDF-vJ-GV4">
                                         <rect key="frame" x="15" y="106" width="47" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="47" id="4il-Rx-DYu"/>
                                             <constraint firstAttribute="height" constant="25" id="9KU-vE-1gH"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vector-cloud-png.png" translatesAutoresizingMaskIntoConstraints="NO" id="LkI-eg-kkC">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud vector.png" translatesAutoresizingMaskIntoConstraints="NO" id="LkI-eg-kkC">
                                         <rect key="frame" x="325" y="106" width="47" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="47" id="lIB-ig-Akl"/>
@@ -1166,7 +1166,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cloud vector.png" width="809" height="376"/>
         <image name="icons8-plus-24 (1).png" width="24" height="24"/>
-        <image name="vector-cloud-png.png" width="600" height="364"/>
     </resources>
 </document>
