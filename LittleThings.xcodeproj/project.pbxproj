@@ -27,6 +27,10 @@
 		FC3AD7132118C55C003F41A3 /* icons8-plus-24 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = FC3AD7122118C55C003F41A3 /* icons8-plus-24 (1).png */; };
 		FC3AD7152118FFD7003F41A3 /* DisplayAdviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3AD7142118FFD7003F41A3 /* DisplayAdviceViewController.swift */; };
 		FC3AD717211A31A0003F41A3 /* DisplayEventDayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3AD716211A31A0003F41A3 /* DisplayEventDayCollectionViewCell.swift */; };
+		FC3AD71C211A5F91003F41A3 /* CabinCondensed-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC3AD718211A5F8E003F41A3 /* CabinCondensed-Medium.ttf */; };
+		FC3AD71D211A5F91003F41A3 /* CabinCondensed-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC3AD719211A5F8F003F41A3 /* CabinCondensed-SemiBold.ttf */; };
+		FC3AD71E211A5F91003F41A3 /* CabinCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC3AD71A211A5F90003F41A3 /* CabinCondensed-Regular.ttf */; };
+		FC3AD71F211A5F91003F41A3 /* CabinCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC3AD71B211A5F90003F41A3 /* CabinCondensed-Bold.ttf */; };
 		FC4B7A00210586BD0066D359 /* ActivitiesMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC4B79FF210586BD0066D359 /* ActivitiesMain.storyboard */; };
 		FC4B7A02210587020066D359 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A01210587020066D359 /* MainViewController.swift */; };
 		FC4B7A06210587E90066D359 /* DisplayEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A05210587E90066D359 /* DisplayEventViewController.swift */; };
@@ -66,6 +70,10 @@
 		FC3AD7122118C55C003F41A3 /* icons8-plus-24 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-plus-24 (1).png"; sourceTree = "<group>"; };
 		FC3AD7142118FFD7003F41A3 /* DisplayAdviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayAdviceViewController.swift; sourceTree = "<group>"; };
 		FC3AD716211A31A0003F41A3 /* DisplayEventDayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayEventDayCollectionViewCell.swift; sourceTree = "<group>"; };
+		FC3AD718211A5F8E003F41A3 /* CabinCondensed-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CabinCondensed-Medium.ttf"; sourceTree = "<group>"; };
+		FC3AD719211A5F8F003F41A3 /* CabinCondensed-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CabinCondensed-SemiBold.ttf"; sourceTree = "<group>"; };
+		FC3AD71A211A5F90003F41A3 /* CabinCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CabinCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		FC3AD71B211A5F90003F41A3 /* CabinCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CabinCondensed-Bold.ttf"; sourceTree = "<group>"; };
 		FC4B79FF210586BD0066D359 /* ActivitiesMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ActivitiesMain.storyboard; sourceTree = "<group>"; };
 		FC4B7A01210587020066D359 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FC4B7A05210587E90066D359 /* DisplayEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayEventViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +124,10 @@
 		FC34F81B2110CEB500455F8C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				FC3AD71B211A5F90003F41A3 /* CabinCondensed-Bold.ttf */,
+				FC3AD718211A5F8E003F41A3 /* CabinCondensed-Medium.ttf */,
+				FC3AD71A211A5F90003F41A3 /* CabinCondensed-Regular.ttf */,
+				FC3AD719211A5F8F003F41A3 /* CabinCondensed-SemiBold.ttf */,
 				FC3AD7082118C2FE003F41A3 /* Montserrat-Bold.ttf */,
 				FC3AD70A2118C303003F41A3 /* Montserrat-Light.ttf */,
 				FC3AD70B2118C305003F41A3 /* Montserrat-Medium.ttf */,
@@ -290,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC3AD7112118C309003F41A3 /* Montserrat-Regular.ttf in Resources */,
+				FC3AD71D211A5F91003F41A3 /* CabinCondensed-SemiBold.ttf in Resources */,
 				FC3AD70F2118C309003F41A3 /* Montserrat-Light.ttf in Resources */,
 				FC3AD7102118C309003F41A3 /* Montserrat-Medium.ttf in Resources */,
 				FC34F8222110D02C00455F8C /* Quicksand-Bold.ttf in Resources */,
@@ -301,10 +314,13 @@
 				FC34F8342115147C00455F8C /* vector-cloud-png.png in Resources */,
 				FC34F81D2110CEE400455F8C /* LeckerliOne-Regular.ttf in Resources */,
 				FC4B7A00210586BD0066D359 /* ActivitiesMain.storyboard in Resources */,
+				FC3AD71E211A5F91003F41A3 /* CabinCondensed-Regular.ttf in Resources */,
 				FC3AD7132118C55C003F41A3 /* icons8-plus-24 (1).png in Resources */,
 				FC3AD70D2118C309003F41A3 /* Montserrat-Bold.ttf in Resources */,
 				FCE153092105829A008682EB /* Main.storyboard in Resources */,
+				FC3AD71C211A5F91003F41A3 /* CabinCondensed-Medium.ttf in Resources */,
 				FC34F8232110D02C00455F8C /* Quicksand-Light.ttf in Resources */,
+				FC3AD71F211A5F91003F41A3 /* CabinCondensed-Bold.ttf in Resources */,
 				FC34F8252110D02C00455F8C /* Quicksand-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

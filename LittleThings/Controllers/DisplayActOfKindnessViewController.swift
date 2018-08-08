@@ -21,12 +21,16 @@ class DisplayActOfKindnessViewController: UIViewController {
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var homeButton: UIButton!
     @IBOutlet weak var designCardView: UIView!
+    @IBOutlet weak var designView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         fixButtons(button: addButton)
         fixButtons(button: homeButton)
         generateActOfKindness(completionHander: handleActOfKindnessArray)
+        designView.layer.cornerRadius = 20
+        designView.layer.shadowOffset = CGSize(width: 0, height: 3)
+        designView.layer.shadowOpacity = Float(0.4)
         designCardView.layer.cornerRadius = 10
         designCardView.layer.shadowOffset = CGSize(width: 0, height: 1)
         designCardView.layer.shadowOpacity = Float(0.2)

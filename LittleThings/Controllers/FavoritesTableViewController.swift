@@ -21,6 +21,7 @@ class FavoritesTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.separatorStyle = .none
         retrieveFavoritesDates(completionHandler: handleRetrieveFavorites)
     }
     

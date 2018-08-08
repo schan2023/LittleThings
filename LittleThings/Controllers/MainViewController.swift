@@ -19,6 +19,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     
     @IBOutlet weak var customizedButton: UIButton!
+    @IBOutlet weak var designView: UIView!
     
     //Adding event
     var ref: DatabaseReference!
@@ -32,6 +33,10 @@ class MainViewController: UIViewController {
         fixButtons(button: generateEventButton)
         fixButtons(button: favoritesButton)
         fixButtons(button: saveButton)
+        
+        designView.layer.cornerRadius = 20
+        designView.layer.shadowOffset = CGSize(width: 0, height: 3)
+        designView.layer.shadowOpacity = Float(0.4)
         
         customizedButton.layer.borderColor = UIColor.white.cgColor
         customizedButton.layer.borderWidth = 1.0

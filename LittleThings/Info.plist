@@ -12,6 +12,10 @@
 		<string>Montserrat-Medium.ttf</string>
 		<string>Montserrat-Regular.ttf</string>
 		<string>Montserrat-SemiBold.ttf</string>
+		<string>CabinCondensed-Bold.ttf</string>
+		<string>CabinCondensed-Medium.ttf</string>
+		<string>CabinCondensed-Regular.ttf</string>
+		<string>CabinCondensed-SemiBold.ttf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
