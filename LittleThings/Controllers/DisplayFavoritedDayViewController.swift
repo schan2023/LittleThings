@@ -22,7 +22,14 @@ class DisplayFavoritedDayViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        retrieveFavoritedEvent(completionHandler: handleFavoritesArrayCompletion)
+//        retrieveFavoritedEvent(completionHandler: handleFavoritesArrayCompletion)
+        retrieveFavoritedEvent { (events) in
+            self.favoritedEventsArray = events
+            self.favoritedEventDateLabel.text = self.date
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
+        }
         let layout = collectionView!.collectionViewLayout as! UICollectionViewFlowLayout
         layout.scrollDirection = .horizontal
         collectionView?.dataSource = self
@@ -43,11 +50,6 @@ class DisplayFavoritedDayViewController: UIViewController {
             completionHandler(self.favoritedEventsArray)
         })
     }
-
-    func handleFavoritesArrayCompletion(favoritesArray: [String]) -> Void {
-        favoritedEventDateLabel.text = date
-        favoritedEventsArray = favoritesArray
-    }
     
     @IBAction func homeButtonPressed(_ sender: Any) {
         self.navigationController?.popToRootViewController(animated: true)
@@ -62,15 +64,12 @@ extension DisplayFavoritedDayViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print(favoritedEventsArray.count)
-//        return favoritedEventsArray.count
-        return 10
+        return favoritedEventsArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier:  "displayEventCell", for: indexPath) as! DisplayEventDayCollectionViewCell
-//        cell.eventDescriptionLabel.text = favoritedEventsArray[indexPath.item]
-        cell.eventDescriptionLabel.text = "events"
+        cell.eventDescriptionLabel.text = favoritedEventsArray[indexPath.item]
         
         return cell
     }
