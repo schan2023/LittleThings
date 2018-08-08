@@ -17,6 +17,7 @@ class DisplayComplimentViewController: UIViewController {
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var homeButton: UIButton!
     @IBOutlet weak var designCardView: UIView!
+    @IBOutlet weak var designView: UIView!
     
     var complimentsArray: [String] = [String]()
     var numOfCompliments: Int?
@@ -27,6 +28,9 @@ class DisplayComplimentViewController: UIViewController {
         fixButtons(button: addButton)
         fixButtons(button: homeButton)
         generateCompliment(completionHander: handleCompliments)
+        designView.layer.cornerRadius = 20
+        designView.layer.shadowOffset = CGSize(width: 0, height: 3)
+        designView.layer.shadowOpacity = Float(0.4)
         designCardView.layer.cornerRadius = 10
         designCardView.layer.shadowOffset = CGSize(width: 0, height: 1)
         designCardView.layer.shadowOpacity = Float(0.2)

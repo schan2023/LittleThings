@@ -31,7 +31,7 @@ class DisplayEventViewController: UIViewController {
         formatCards()
         reflectTitleView.layer.cornerRadius = 15
         reflectTitleView.layer.shadowOffset = CGSize(width: 0, height: 1)
-        reflectTitleView.layer.shadowOpacity = Float(0.2)
+        reflectTitleView.layer.shadowOpacity = Float(0.5)
         generateEvent(completionHandler: handleArrayOfEventsCompletion)
     }
     

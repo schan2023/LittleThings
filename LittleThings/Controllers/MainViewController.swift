@@ -35,8 +35,8 @@ class MainViewController: UIViewController {
         fixButtons(button: saveButton)
         
         designView.layer.cornerRadius = 20
-        designView.layer.shadowOffset = CGSize(width: 0, height: 1)
-        designView.layer.shadowOpacity = Float(0.2)
+        designView.layer.shadowOffset = CGSize(width: 0, height: 3)
+        designView.layer.shadowOpacity = Float(0.4)
         
         customizedButton.layer.borderColor = UIColor.white.cgColor
         customizedButton.layer.borderWidth = 1.0
