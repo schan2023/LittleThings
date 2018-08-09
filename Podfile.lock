@@ -146,6 +146,7 @@ PODS:
   - SDWebImage (4.4.2):
     - SDWebImage/Core (= 4.4.2)
   - SDWebImage/Core (4.4.2)
+  - SnapKit (4.0.0)
   - TwitterCore (3.2.0)
   - TwitterKit (3.4.0):
     - TwitterCore (>= 3.1.0)
@@ -155,6 +156,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - FirebaseUI
+  - SnapKit (~> 4.0.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -184,6 +186,7 @@ SPEC REPOS:
     - nanopb
     - Protobuf
     - SDWebImage
+    - SnapKit
     - TwitterCore
     - TwitterKit
 
@@ -214,9 +217,10 @@ SPEC CHECKSUMS:
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Protobuf: 0fc0ad8bec688b2a3017a139953e01374fedbd5f
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   TwitterCore: 8cbc9ad34d91c63a0035ea05bfbfc0d7ca72a28c
   TwitterKit: bc7bd086b9b724a1d888745a054e1d0b1ecc4f3f
 
-PODFILE CHECKSUM: 2cdba377ae9d1b354d9b9e44c3a91c7b45275496
+PODFILE CHECKSUM: d03e75ec198e3a595a7ea6ef791177024ff67075
 
 COCOAPODS: 1.5.3

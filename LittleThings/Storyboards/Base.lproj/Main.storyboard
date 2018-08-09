@@ -307,7 +307,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="191" id="Lz7-iI-bT2"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
                                         <color key="textColor" red="0.4039215686" green="0.39607843139999999" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -323,14 +323,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zyw-w3-ecK">
                                 <rect key="frame" x="15" y="58" width="384" height="247"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud vector.png" translatesAutoresizingMaskIntoConstraints="NO" id="ovB-Y2-mEN">
-                                        <rect key="frame" x="15" y="106" width="42" height="25"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud vector.png" translatesAutoresizingMaskIntoConstraints="NO" id="OTx-oV-Wjj">
-                                        <rect key="frame" x="330" y="106" width="42" height="25"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APPRECIATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anF-Sv-ZbG">
                                         <rect key="frame" x="0.0" y="58" width="384" height="125"/>
                                         <constraints>
@@ -344,6 +336,7 @@
                                 <color key="backgroundColor" red="0.56078431370000004" green="0.75686274509999996" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="anF-Sv-ZbG" firstAttribute="leading" secondItem="Zyw-w3-ecK" secondAttribute="leading" id="Djf-fw-OHD"/>
+                                    <constraint firstAttribute="bottom" secondItem="anF-Sv-ZbG" secondAttribute="bottom" constant="64" id="Fvh-QD-Zo9"/>
                                     <constraint firstAttribute="trailing" secondItem="anF-Sv-ZbG" secondAttribute="trailing" id="KaM-id-CvH"/>
                                     <constraint firstItem="anF-Sv-ZbG" firstAttribute="top" secondItem="Zyw-w3-ecK" secondAttribute="top" constant="58" id="uck-tA-Mf2"/>
                                 </constraints>
@@ -367,7 +360,9 @@
                     </view>
                     <connections>
                         <outlet property="addButton" destination="c2v-xF-UGk" id="6J8-bD-Z6M"/>
+                        <outlet property="buttonStackView" destination="nwu-pC-vpY" id="cr1-1r-ENy"/>
                         <outlet property="complimentLabel" destination="3z8-JT-oxr" id="irq-zD-ztT"/>
+                        <outlet property="complimentTitleLabel" destination="anF-Sv-ZbG" id="irm-LF-EgW"/>
                         <outlet property="designCardView" destination="cfi-9o-Rhp" id="j73-By-hp9"/>
                         <outlet property="designView" destination="Zyw-w3-ecK" id="RgD-xs-QW6"/>
                         <outlet property="homeButton" destination="kDP-Q1-6LR" id="f6N-8A-vmQ"/>
@@ -546,7 +541,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="191" id="msu-2H-z8e"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
                                         <color key="textColor" white="0.32839330700000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -919,7 +914,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BnT-5B-0BO">
                                         <rect key="frame" x="30" y="4" width="314" height="191"/>
-                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
                                         <color key="textColor" red="0.4039215686" green="0.39607843139999999" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -973,34 +968,19 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tyd-pU-QLE">
                                 <rect key="frame" x="15" y="58" width="384" height="247"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="INSPIRATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbh-Ct-lYr">
-                                        <rect key="frame" x="0.0" y="61" width="384" height="125"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INSPIRATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbh-Ct-lYr">
+                                        <rect key="frame" x="0.0" y="58" width="384" height="125"/>
                                         <fontDescription key="fontDescription" name="CabinCondensed-Bold" family="Cabin Condensed" pointSize="45"/>
                                         <color key="textColor" red="0.96862745100000003" green="0.97647058819999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud vector.png" translatesAutoresizingMaskIntoConstraints="NO" id="VBX-YE-7hO">
-                                        <rect key="frame" x="15" y="106" width="47" height="25"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="25" id="IFd-lg-KeD"/>
-                                            <constraint firstAttribute="width" constant="47" id="w4L-n9-R29"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud vector.png" translatesAutoresizingMaskIntoConstraints="NO" id="54Q-UP-g9a">
-                                        <rect key="frame" x="320" y="106" width="47" height="25"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="47" id="dJJ-iJ-PJ6"/>
-                                        </constraints>
-                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.56078431370000004" green="0.75686274509999996" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="54Q-UP-g9a" secondAttribute="trailing" constant="17" id="6eG-Jk-az1"/>
-                                    <constraint firstItem="VBX-YE-7hO" firstAttribute="top" secondItem="tyd-pU-QLE" secondAttribute="top" constant="106" id="D7r-9G-vCK"/>
-                                    <constraint firstItem="VBX-YE-7hO" firstAttribute="top" secondItem="54Q-UP-g9a" secondAttribute="top" id="X5b-P8-TuB"/>
-                                    <constraint firstItem="VBX-YE-7hO" firstAttribute="leading" secondItem="tyd-pU-QLE" secondAttribute="leading" constant="15" id="Y9x-40-fGl"/>
-                                    <constraint firstItem="VBX-YE-7hO" firstAttribute="bottom" secondItem="54Q-UP-g9a" secondAttribute="bottom" id="Z64-Bt-vdH"/>
+                                    <constraint firstAttribute="bottom" secondItem="dbh-Ct-lYr" secondAttribute="bottom" constant="64" id="33a-u8-NlA"/>
+                                    <constraint firstItem="dbh-Ct-lYr" firstAttribute="leading" secondItem="tyd-pU-QLE" secondAttribute="leading" id="3xY-FA-9q8"/>
+                                    <constraint firstAttribute="trailing" secondItem="dbh-Ct-lYr" secondAttribute="trailing" id="4NO-hV-VDz"/>
+                                    <constraint firstItem="dbh-Ct-lYr" firstAttribute="top" secondItem="tyd-pU-QLE" secondAttribute="top" constant="58" id="Nh7-82-Pni"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -1024,6 +1004,8 @@
                     <connections>
                         <outlet property="addButton" destination="f6I-R8-pLx" id="QU0-6p-Dmj"/>
                         <outlet property="adviceLabel" destination="BnT-5B-0BO" id="NqC-q4-XcS"/>
+                        <outlet property="adviceTitleLabel" destination="dbh-Ct-lYr" id="dW5-62-mvc"/>
+                        <outlet property="buttonStackView" destination="ahb-O3-s7e" id="tyh-m7-lXs"/>
                         <outlet property="designCardView" destination="fF4-gP-TjT" id="8KP-LW-obR"/>
                         <outlet property="designView" destination="tyd-pU-QLE" id="8gx-t1-Gfe"/>
                         <outlet property="homeButton" destination="XXf-yr-IcH" id="jKp-rY-uwU"/>
@@ -1084,7 +1066,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="191" id="bGc-5s-YJT"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
                                         <color key="textColor" red="0.4039215686" green="0.39607843139999999" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1100,24 +1082,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a7L-eE-nLr">
                                 <rect key="frame" x="15" y="58" width="384" height="247"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud vector.png" translatesAutoresizingMaskIntoConstraints="NO" id="RDF-vJ-GV4">
-                                        <rect key="frame" x="15" y="106" width="47" height="25"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="47" id="4il-Rx-DYu"/>
-                                            <constraint firstAttribute="height" constant="25" id="9KU-vE-1gH"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud vector.png" translatesAutoresizingMaskIntoConstraints="NO" id="LkI-eg-kkC">
-                                        <rect key="frame" x="325" y="106" width="47" height="25"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="47" id="lIB-ig-Akl"/>
-                                        </constraints>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COMPASSION" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KrV-2H-Amv">
-                                        <rect key="frame" x="0.0" y="-31" width="384" height="309"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="309" id="HVx-7y-og3"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="58" width="384" height="125"/>
                                         <fontDescription key="fontDescription" name="CabinCondensed-Bold" family="Cabin Condensed" pointSize="44"/>
                                         <color key="textColor" red="0.96862745100000003" green="0.97647058819999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1125,14 +1091,10 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.56078431370000004" green="0.75686274509999996" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="KrV-2H-Amv" firstAttribute="centerY" secondItem="a7L-eE-nLr" secondAttribute="centerY" id="7Wv-eP-CKq"/>
-                                    <constraint firstItem="RDF-vJ-GV4" firstAttribute="top" secondItem="LkI-eg-kkC" secondAttribute="top" id="QPg-zm-LFs"/>
+                                    <constraint firstAttribute="bottom" secondItem="KrV-2H-Amv" secondAttribute="bottom" constant="64" id="Ke0-Q7-AST"/>
                                     <constraint firstAttribute="trailing" secondItem="KrV-2H-Amv" secondAttribute="trailing" id="QTZ-bC-jjb"/>
-                                    <constraint firstItem="RDF-vJ-GV4" firstAttribute="leading" secondItem="a7L-eE-nLr" secondAttribute="leading" constant="15" id="RJN-kE-P5Q"/>
                                     <constraint firstItem="KrV-2H-Amv" firstAttribute="leading" secondItem="a7L-eE-nLr" secondAttribute="leading" id="T8f-JK-hQD"/>
-                                    <constraint firstItem="RDF-vJ-GV4" firstAttribute="bottom" secondItem="LkI-eg-kkC" secondAttribute="bottom" id="ZWr-u7-SGl"/>
-                                    <constraint firstItem="RDF-vJ-GV4" firstAttribute="top" secondItem="a7L-eE-nLr" secondAttribute="top" constant="106" id="hS0-9P-jIE"/>
-                                    <constraint firstAttribute="trailing" secondItem="LkI-eg-kkC" secondAttribute="trailing" constant="12" id="rbM-0z-Bmt"/>
+                                    <constraint firstItem="KrV-2H-Amv" firstAttribute="top" secondItem="a7L-eE-nLr" secondAttribute="top" constant="58" id="uNM-4V-Val"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -1154,7 +1116,9 @@
                     </view>
                     <connections>
                         <outlet property="actOfKindnessLabel" destination="8gQ-td-RQT" id="K2S-mM-Ctz"/>
+                        <outlet property="actOfKindnessTitleLabel" destination="KrV-2H-Amv" id="d9r-zr-6Yc"/>
                         <outlet property="addButton" destination="yBM-Ip-LS0" id="cg3-Zj-fpx"/>
+                        <outlet property="buttonStackView" destination="5a9-mm-2gs" id="ZIi-2v-kQL"/>
                         <outlet property="designCardView" destination="KYr-Gj-5mV" id="sGY-Ud-YkS"/>
                         <outlet property="designView" destination="a7L-eE-nLr" id="HSA-GO-Vca"/>
                         <outlet property="homeButton" destination="s1v-Qs-954" id="8Hz-Jo-HYF"/>

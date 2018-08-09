@@ -10,5 +10,6 @@ target 'LittleThings' do
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'FirebaseUI'
+  pod 'SnapKit', '~> 4.0.0'
 
 end
