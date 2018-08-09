@@ -15,14 +15,80 @@ import FirebaseDatabase
 class DisplayEventViewController: UIViewController {
     
     
+    @IBOutlet weak var reflectTitleLabel: UILabel!
     @IBOutlet weak var generateButton: UIButton!
     @IBOutlet weak var goToDayButton: UIButton!
     @IBOutlet weak var eventDateLabel: UILabel!
     @IBOutlet weak var designCardsView: UIView!
     @IBOutlet weak var reflectTitleView: UIView!
+    @IBOutlet weak var buttonStackView: UIStackView!
+    @IBOutlet weak var eventLabel: UILabel!
     
     var arrayOfEvents: [String] = [String]()
     var currentDate: String?
+    
+    private func setConstraints() {
+        let screenHeight = UIScreen.main.bounds.height
+        let screenWidth = UIScreen.main.bounds.width
+        reflectTitleView.snp.makeConstraints { (make) in
+            let designViewHeight = screenHeight * 0.3356
+            make.height.equalTo(designViewHeight)
+            make.left.equalToSuperview().offset(15)
+            make.right.equalToSuperview().offset(-15)
+            make.top.equalToSuperview().offset(75)
+            
+        }
+        
+        reflectTitleLabel.snp.makeConstraints { (make) in
+            make.top.equalToSuperview().offset(58)
+            make.right.equalToSuperview()
+            make.bottom.equalToSuperview().offset(75)
+            make.left.equalToSuperview()
+        }
+        
+        eventDateLabel.snp.makeConstraints { (make) in
+            make.top.equalToSuperview().offset(120)
+            make.right.equalToSuperview().offset(-20)
+            make.bottom.equalToSuperview().offset(10)
+            make.left.equalToSuperview().offset(20)
+        }
+        
+        designCardsView.snp.makeConstraints { (make) in
+            make.top.equalTo(reflectTitleView.snp.bottom).offset(25)
+            make.right.equalToSuperview().offset(-15)
+            make.left.equalToSuperview().offset(15)
+        }
+        
+        eventLabel.snp.makeConstraints { (make) in
+            make.top.equalToSuperview().offset(4)
+            make.right.equalToSuperview().offset(-30)
+            make.bottom.equalToSuperview().offset(4)
+            make.left.equalToSuperview().offset(30)
+        }
+        
+        buttonStackView.snp.makeConstraints { (make) in
+            make.top.equalTo(designCardsView.snp.bottom).offset(71)
+            make.right.equalToSuperview().offset(-37)
+            make.left.equalToSuperview().offset(37)
+            make.bottom.equalToSuperview().offset(88)
+        }
+        
+        generateButton.snp.makeConstraints { (make) in
+            let btnHeight = screenHeight * 0.06114
+            let btnWidth = screenWidth * 0.2899
+            make.height.equalTo(btnHeight)
+            make.width.equalTo(btnWidth)
+        }
+
+        goToDayButton.snp.makeConstraints { (make) in
+            let btnHeight = screenHeight * 0.06114
+            let btnWidth = screenWidth * 0.2899
+            make.height.equalTo(btnHeight)
+            make.width.equalTo(btnWidth)
+        }
+        
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,8 +100,6 @@ class DisplayEventViewController: UIViewController {
         reflectTitleView.layer.shadowOpacity = Float(0.5)
         generateEvent(completionHandler: handleArrayOfEventsCompletion)
     }
-    
-    @IBOutlet weak var eventLabel: UILabel!
     
     @IBAction func generateButtonTapped(_ sender: Any) {
         print("generate button tapped!")

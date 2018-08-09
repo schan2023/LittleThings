@@ -17,9 +17,13 @@ class MainViewController: UIViewController {
     @IBOutlet weak var generateEventButton: UIButton!
     @IBOutlet weak var favoritesButton: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var promptLabel: UILabel!
     
     @IBOutlet weak var customizedButton: UIButton!
     @IBOutlet weak var designView: UIView!
+    @IBOutlet weak var buttonStackView: UIStackView!
+    @IBOutlet weak var cloud1: UIImageView!
+    @IBOutlet weak var cloud2: UIImageView!
     
     //Adding event
     var ref: DatabaseReference!
@@ -29,7 +33,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
-//        handleLogin()
+        handleLogin()
         fixButtons(button: generateEventButton)
         fixButtons(button: favoritesButton)
         fixButtons(button: saveButton)
