@@ -109,12 +109,8 @@ class DisplayActOfKindnessViewController: UIViewController {
     }
     
     func handleActOfKindnessArray(actsOfKindness: [String], numOfActs: Int) -> Void {
-        print("array of kindness \(actsOfKindness)")
-        print("numOfActs \(numOfActs)")
-        
         let randomInt = Int(arc4random_uniform(UInt32(numOfActs-1)))
         
-        print("displaying on label")
         actOfKindnessLabel.text = actsOfKindness[randomInt]
         singleActOfKindness = actsOfKindness[randomInt]
     }

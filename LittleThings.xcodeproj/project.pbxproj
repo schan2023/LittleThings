@@ -36,7 +36,6 @@
 		FC4B7A082105956C0066D359 /* EventDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A072105956C0066D359 /* EventDayViewController.swift */; };
 		FC4B7A0A210595840066D359 /* ActivitiesMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A09210595840066D359 /* ActivitiesMainViewController.swift */; };
 		FC4B7A18210597630066D359 /* ListFavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A17210597630066D359 /* ListFavoritesTableViewCell.swift */; };
-		FC4B7A1B21064E430066D359 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A1A21064E430066D359 /* CoreDataHelper.swift */; };
 		FC4B7A1D21068A6E0066D359 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B7A1C21068A6E0066D359 /* Alerts.swift */; };
 		FC4B7A1F2107C7FB0066D359 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC4B7A1E2107C7FA0066D359 /* GoogleService-Info.plist */; };
 		FCE153042105829A008682EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE153032105829A008682EB /* AppDelegate.swift */; };
@@ -78,7 +77,6 @@
 		FC4B7A072105956C0066D359 /* EventDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDayViewController.swift; sourceTree = "<group>"; };
 		FC4B7A09210595840066D359 /* ActivitiesMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesMainViewController.swift; sourceTree = "<group>"; };
 		FC4B7A17210597630066D359 /* ListFavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFavoritesTableViewCell.swift; sourceTree = "<group>"; };
-		FC4B7A1A21064E430066D359 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		FC4B7A1C21068A6E0066D359 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		FC4B7A1E2107C7FA0066D359 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FCE153002105829A008682EB /* LittleThings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleThings.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,7 +191,6 @@
 		FC4B7A1921064E310066D359 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				FC4B7A1A21064E430066D359 /* CoreDataHelper.swift */,
 				FC4B7A1C21068A6E0066D359 /* Alerts.swift */,
 				FC34F82A2113870900455F8C /* CreateEvent.swift */,
 			);
@@ -446,7 +443,6 @@
 				FC3AD7152118FFD7003F41A3 /* DisplayAdviceViewController.swift in Sources */,
 				FCE1530C2105829A008682EB /* LittleThings.xcdatamodeld in Sources */,
 				FC4B7A1D21068A6E0066D359 /* Alerts.swift in Sources */,
-				FC4B7A1B21064E430066D359 /* CoreDataHelper.swift in Sources */,
 				FC4B7A082105956C0066D359 /* EventDayViewController.swift in Sources */,
 				FC3AD717211A31A0003F41A3 /* DisplayEventDayCollectionViewCell.swift in Sources */,
 			);
@@ -602,7 +598,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MakeSchool.LittleThings;
+				PRODUCT_BUNDLE_IDENTIFIER = com.simonechan.littlethings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -623,7 +619,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MakeSchool.LittleThings;
+				PRODUCT_BUNDLE_IDENTIFIER = com.simonechan.littlethings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -111,12 +111,8 @@ class DisplayComplimentViewController: UIViewController {
     }
     
     func handleCompliments(compliments: [String], numOfCompliments: Int) -> Void {
-        print("array of compliments \(compliments)")
-        print("numOfCompliments \(numOfCompliments)")
-        
         let randomInt = Int(arc4random_uniform(UInt32(numOfCompliments-1)))
         
-        print("displaying on label")
         complimentLabel.text = compliments[randomInt]
         singleCompliment = compliments[randomInt]
     }

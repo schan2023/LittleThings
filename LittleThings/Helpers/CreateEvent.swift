@@ -23,20 +23,16 @@ class CreateEvent {
         let user = Auth.auth().currentUser
         ref.child((user?.uid)!).child("EventDays").child(eventDate).child("date").observeSingleEvent(of: .value, with: {(snapshot) -> Void in
             if snapshot.exists() {
-                print("Snapshot value exists: \(snapshot.value)")
                 let snapValue = snapshot.value as! String
                 if snapValue == eventDate {
-                    print("Add events to current reference: EventDays->currentDate->event")
                     self.ref.child((user?.uid)!).child("EventDays").child(eventDate).childByAutoId().setValue(eventDescription)
                 }
                 else {
-                    print("new item w/ index to first tree, add new node to EventDays->currentDate")
                     self.ref.child((user?.uid)!).child("EventDays").child(eventDate).child("date").setValue(eventDate)
                     self.updateEventDays(user: user, id: eventDate)
                 }
             }
             else {
-                print("Snapshot value does not exist, new item w/ index to first tree, add new node to EventDays->currentDate")
                 self.ref.child((user?.uid)!).child("EventDays").child(eventDate).child("date").setValue(eventDate)
                 self.ref.child((user?.uid)!).child("EventDays").child(eventDate).childByAutoId().setValue(eventDescription)
                 self.updateEventDays(user: user, id: eventDate)

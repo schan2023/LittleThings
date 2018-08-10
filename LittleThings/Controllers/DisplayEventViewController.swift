@@ -102,7 +102,6 @@ class DisplayEventViewController: UIViewController {
     }
     
     @IBAction func generateButtonTapped(_ sender: Any) {
-        print("generate button tapped!")
         arrayOfEvents.removeAll()
         generateEvent(completionHandler: handleArrayOfEventsCompletion)
     }
@@ -178,7 +177,6 @@ class DisplayEventViewController: UIViewController {
         
         switch identifier {
         case "displayEventDay":
-            print("inside display event day segue")
             let destination = segue.destination as! EventDayViewController
             destination.currentEventsDay = arrayOfEvents
             destination.currentEventDate = currentDate
