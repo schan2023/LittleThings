@@ -36,47 +36,45 @@ class EventDayViewController: UIViewController {
         let screenWidth = UIScreen.main.bounds.width
         
         eventDateLabel.snp.makeConstraints { (make) in
-            let eventDateHeight = screenHeight * 0.1644
+            let eventDateHeight = screenHeight * 0.1127
             let eventDateWidth = screenWidth * 0.9106
             make.height.equalTo(eventDateHeight)
             make.width.equalTo(eventDateWidth)
-            make.top.equalToSuperview()
+            make.top.equalToSuperview().offset(49)
             make.left.equalToSuperview().offset(20)
             make.right.equalToSuperview().offset(20)
         }
         
-//        lineView.snp.makeConstraints{ (make) in
-//            let lineHeight = screenHeight * 0.00091
-//            make.height.equalTo(lineHeight)
-//            make.top.equalToSuperview().offset(91)
-//            make.left.equalToSuperview().offset(15)
-//            make.right.equalToSuperview().offset(-15)
-//            make.bottom.equalTo(collectionView).offset(53.33)
-//        }
+        lineView.snp.makeConstraints{ (make) in
+            let lineHeight = screenHeight * 0.00091
+            make.height.equalTo(lineHeight)
+            make.top.equalTo(eventDateLabel.snp.bottom).offset(8)
+            make.left.equalToSuperview().offset(15)
+            make.right.equalToSuperview().offset(-15)
+        }
         
         collectionView.snp.makeConstraints { (make) in
-            let collectionViewHeight = screenHeight * 0.468
+            let collectionViewHeight = screenHeight * 0.451
             make.height.equalTo(collectionViewHeight)
-//            make.top.equalTo(lineView).offset(53.33)
-            make.top.equalTo(eventDateLabel).offset(39)
+            make.top.equalTo(lineView.snp.bottom).offset(53.33)
             make.left.equalToSuperview().offset(10)
             make.right.equalToSuperview().offset(-10)
         }
-        
+
         buttonStackView.snp.makeConstraints { (make) in
             make.top.equalTo(collectionView.snp.bottom).offset(37)
             make.right.equalToSuperview().offset(-37)
             make.left.equalToSuperview().offset(37)
             make.bottom.equalToSuperview().offset(100)
         }
-        
+
         faveBtn.snp.makeConstraints { (make) in
             let btnHeight = screenHeight * 0.06114
             let btnWidth = screenWidth * 0.2899
             make.height.equalTo(btnHeight)
             make.width.equalTo(btnWidth)
         }
-        
+
         homeBtn.snp.makeConstraints { (make) in
             let btnHeight = screenHeight * 0.06114
             let btnWidth = screenWidth * 0.2899
